@@ -2,6 +2,7 @@ package com.viadee.sonarQuest.controllers;
 
 import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -61,15 +62,17 @@ public class ArtefactController {
     @RequestMapping(value = "/{artefact_id}/buy", method = RequestMethod.PUT)
     public boolean buyArtefact(final Principal principal, @PathVariable(value = "artefact_id") final Long artefact_id) {
         final User user = userService.findByUsername(principal.getName());
-        final Artefact artefact = artefactRepository.findOne(artefact_id);
-
-        return artefactService.buyArtefact(artefact, user) != null;
+        Optional<Artefact> artefactToBuy = artefactRepository.findById(artefact_id);
+        if (artefactToBuy.isPresent()) {
+            return artefactService.buyArtefact(artefactToBuy.get(), user) != null;
+        }
+        return false;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteArtefact(@PathVariable(value = "id") final Long id) {
-        if (artefactRepository.findOne(id) != null) {
-            artefactRepository.delete(id);
+        if (artefactRepository.findById(id) != null) {
+            artefactRepository.deleteById(id);
         }
     }
 

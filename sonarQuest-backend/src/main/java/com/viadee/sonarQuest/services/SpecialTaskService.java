@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,12 +38,16 @@ public class SpecialTaskService {
     }
 
     public SpecialTask updateSpecialTask(final SpecialTask taskDto) {
-        final SpecialTask task = specialTaskRepository.findOne(taskDto.getId());
-        task.setTitle(taskDto.getTitle());
-        task.setGold(taskDto.getGold());
-        task.setXp(taskDto.getXp());
-        task.setMessage(taskDto.getMessage());
-        return specialTaskRepository.save(task);
+        Optional<SpecialTask> task = specialTaskRepository.findById(taskDto.getId());
+        if (task.isPresent()) {
+            final SpecialTask realtask = task.get();
+            realtask.setTitle(taskDto.getTitle());
+            realtask.setGold(taskDto.getGold());
+            realtask.setXp(taskDto.getXp());
+            realtask.setMessage(taskDto.getMessage());
+            return specialTaskRepository.save(realtask);
+        }
+        return null;
     }
 
     public List<SpecialTask> findAll() {
@@ -54,7 +59,7 @@ public class SpecialTaskService {
     }
 
     public SpecialTask findById(final Long id) {
-        return specialTaskRepository.findOne(id);
+        return specialTaskRepository.findById(id).orElse(null);
     }
 
 }

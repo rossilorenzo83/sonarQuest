@@ -56,10 +56,6 @@ public class UserService implements UserDetailsService {
         return userRepository.findByUsername(username);
     }
 
-    private User findById(final Long id) {
-        return userRepository.findOne(id);
-    }
-
     public World updateUsersCurrentWorld(final User user, final Long worldId) {
         final World world = worldService.findById(worldId);
         user.setCurrentWorld(world);
@@ -115,7 +111,7 @@ public class UserService implements UserDetailsService {
     }
 
     public User findById(final long userId) {
-        return userRepository.findOne(userId);
+        return userRepository.findById(userId).orElse(null);
     }
 
     public List<User> findAll() {

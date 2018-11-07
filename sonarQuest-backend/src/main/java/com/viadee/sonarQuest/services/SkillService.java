@@ -1,5 +1,6 @@
 package com.viadee.sonarQuest.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.viadee.sonarQuest.entities.Artefact;
 import com.viadee.sonarQuest.entities.Skill;
-import com.viadee.sonarQuest.repositories.ArtefactRepository;
 import com.viadee.sonarQuest.repositories.SkillRepository;
 
 @Service
@@ -15,9 +15,6 @@ public class SkillService {
 
     @Autowired
     private SkillRepository skillRepository;
-
-    @Autowired
-    private ArtefactRepository artefactRepository;
 
     public Skill createSkill(final Skill skillDto) {
         final Skill skill = new Skill();
@@ -27,8 +24,12 @@ public class SkillService {
         return skillRepository.save(skill);
     }
 
-    public List<Skill> getSkillsForArtefact(final Artefact a) {
-        return artefactRepository.findOne(a.getId()).getSkills();
+    public List<Skill> getSkillsForArtefact(final Artefact artefact) {
+        if (artefact != null) {
+            return artefact.getSkills();
+        } else {
+            return new ArrayList<>();
+        }
     }
 
     public void deleteSkill(final Skill skill) {

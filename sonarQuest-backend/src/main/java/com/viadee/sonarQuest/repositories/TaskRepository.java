@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.repositories;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -16,9 +17,10 @@ public interface TaskRepository extends TaskBaseRepository<Task> {
     List<Task> findAll();
 
     @Override
-    List<Task> findAll(Iterable<Long> iterable);
+    List<Task> findAllById(Iterable<Long> iterable);
 
-    Task findById(Long id);
+    @Override
+    Optional<Task> findById(Long id);
 
     List<Task> findByQuestAndStatus(Quest quest, SonarQuestStatus status);
 

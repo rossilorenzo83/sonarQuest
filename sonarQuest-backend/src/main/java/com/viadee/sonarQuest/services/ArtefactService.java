@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,7 @@ public class ArtefactService {
     }
 
     public Artefact getArtefact(final long id) {
-        return artefactRepository.findOne(id);
+        return artefactRepository.findById(id).orElse(null);
     }
 
     public Artefact createArtefact(final Artefact artefact) {
@@ -39,15 +40,19 @@ public class ArtefactService {
     }
 
     public Artefact updateArtefact(final Long id, final Artefact artefactDto) {
-        final Artefact artefact = artefactRepository.findOne(id);
-        artefact.setName(artefactDto.getName());
-        artefact.setIcon(artefactDto.getIcon());
-        artefact.setPrice(artefactDto.getPrice());
-        artefact.setDescription(artefactDto.getDescription());
-        artefact.setQuantity(artefactDto.getQuantity());
-        artefact.setMinLevel(levelService.findById(artefactDto.getMinLevel().getId()));
-        artefact.setSkills(artefactDto.getSkills());
-        return artefactRepository.save(artefact);
+        final Optional<Artefact> artefact = artefactRepository.findById(id);
+        if (artefact.isPresent()) {
+            Artefact realArtefact = artefact.get();
+            realArtefact.setName(artefactDto.getName());
+            realArtefact.setIcon(artefactDto.getIcon());
+            realArtefact.setPrice(artefactDto.getPrice());
+            realArtefact.setDescription(artefactDto.getDescription());
+            realArtefact.setQuantity(artefactDto.getQuantity());
+            realArtefact.setMinLevel(levelService.findById(artefactDto.getMinLevel().getId()));
+            realArtefact.setSkills(artefactDto.getSkills());
+            return artefactRepository.save(realArtefact);
+        }
+        return null;
     }
 
     public Artefact buyArtefact(Artefact artefact, final User user) {

@@ -2,6 +2,7 @@ package com.viadee.sonarQuest.controllers;
 
 import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,7 +38,7 @@ public class ParticipationController {
 
     @RequestMapping(method = RequestMethod.GET)
     public Iterable<Participation> getAllParticipations() {
-        return this.participationRepository.findAll();
+        return participationRepository.findAll();
     }
 
     @RequestMapping(value = "/{questid}", method = RequestMethod.GET)
@@ -58,16 +59,18 @@ public class ParticipationController {
     @ResponseStatus(HttpStatus.CREATED)
     public Participation createParticipation(final Principal principal,
             @PathVariable(value = "questid") final Long questid) {
-        final Quest foundQuest = questRepository.findOne(questid);
+        final Optional<Quest> quest = questRepository.findById(questid);
         final String username = principal.getName();
         final User user = userService.findByUsername(username);
-        final Participation foundParticipation = participationRepository.findByQuestAndUser(foundQuest, user);
-        Participation participation = null;
-        if ((foundQuest != null) && (user != null) && (foundParticipation == null)) {
-            participation = new Participation(foundQuest, user);
-            participation = participationRepository.save(participation);
+        if (quest.isPresent() && user != null) {
+            Quest realQuest = quest.get();
+            final Participation existingParticipation = participationRepository.findByQuestAndUser(realQuest, user);
+            if (existingParticipation != null) {
+                Participation participation = new Participation(realQuest, user);
+                return participationRepository.save(participation);
+            }
         }
-        return participation;
+        return null;
     }
 
     @RequestMapping(value = "/{questid}/{developerid}", method = RequestMethod.DELETE)

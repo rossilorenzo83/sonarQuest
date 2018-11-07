@@ -41,7 +41,7 @@ public class TaskService {
     }
 
     public Task find(final Long id) {
-        return taskRepository.findById(id);
+        return taskRepository.findById(id).orElse(null);
     }
 
     public void delete(final Task task) {

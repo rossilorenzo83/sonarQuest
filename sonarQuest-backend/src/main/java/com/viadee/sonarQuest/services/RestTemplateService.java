@@ -4,6 +4,7 @@ import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
+import java.util.function.Supplier;
 
 import javax.net.ssl.SSLContext;
 
@@ -43,7 +44,7 @@ public class RestTemplateService {
         }
     }
 
-    private ClientHttpRequestFactory requestFactory() {
+    private Supplier<ClientHttpRequestFactory> requestFactory() {
         final TrustStrategy acceptingTrustStrategy = (final X509Certificate[] chain, final String authType) -> true;
 
         final SSLContext sslContext = createSslContext(acceptingTrustStrategy);
@@ -55,7 +56,13 @@ public class RestTemplateService {
 
         final HttpComponentsClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory();
         requestFactory.setHttpClient(httpClient);
-        return requestFactory;
+        return new Supplier<ClientHttpRequestFactory>() {
+
+            @Override
+            public ClientHttpRequestFactory get() {
+                return requestFactory;
+            }
+        };
     }
 
     private SSLContext createSslContext(final TrustStrategy acceptingTrustStrategy) {

@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,6 +22,7 @@ import com.viadee.sonarQuest.services.SkillService;
 @RequestMapping("/skill")
 public class SkillController {
 
+    @Autowired
     private SkillRepository skillRepository;
 
     @Autowired
@@ -35,40 +37,43 @@ public class SkillController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Skill> getAllSkills() {
-        return this.skillRepository.findAll();
+        return skillRepository.findAll();
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Skill getSkillById(@PathVariable(value = "id") final Long id) {
-        return this.skillRepository.findOne(id);
+        return skillRepository.findById(id).orElse(null);
     }
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Skill createSkill(@RequestBody final Skill skillDto) {
-        return this.skillRepository.save(skillDto);
+        return skillRepository.save(skillDto);
 
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public Skill updateSkill(@PathVariable(value = "id") final Long id, @RequestBody final Skill data) {
-        Skill skill = this.skillRepository.findOne(id);
+        Skill skill = skillRepository.findById(id).orElse(null);
         if (skill != null) {
             skill.setName(data.getName());
-            skill = this.skillRepository.save(skill);
+            skill = skillRepository.save(skill);
         }
         return skill;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteSkill(@PathVariable(value = "id") final Long id) {
-        this.skillService.deleteSkill(this.skillRepository.findOne(id));
+        Optional<Skill> skill = skillRepository.findById(id);
+        if (skill.isPresent()) {
+            skillService.deleteSkill(skill.get());
+        }
     }
 
     @RequestMapping(value = "artefact/{artefact_id}", method = RequestMethod.GET)
     public List<Skill> getSkillsForArtefact(@PathVariable(value = "artefact_id") final Long id) {
-        final Artefact a = this.artefactService.getArtefact(id);
-        return this.skillService.getSkillsForArtefact(a);
+        final Artefact artefact = artefactService.getArtefact(id);
+        return skillService.getSkillsForArtefact(artefact);
     }
 
 }

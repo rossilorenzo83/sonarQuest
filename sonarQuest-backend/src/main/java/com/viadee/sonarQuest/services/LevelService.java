@@ -18,6 +18,6 @@ public class LevelService {
     }
 
     public Level findById(final Long id) {
-        return levelRepository.findById(id);
+        return levelRepository.findById(id).orElse(null);
     }
 }

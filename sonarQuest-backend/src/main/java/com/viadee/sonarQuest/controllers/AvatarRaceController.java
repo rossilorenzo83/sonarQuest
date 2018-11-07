@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,7 +31,7 @@ public class AvatarRaceController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public AvatarRace getAvatarRaceById(@PathVariable(value = "id") final Long id) {
-        return avatarRaceRepository.findOne(id);
+        return avatarRaceRepository.findById(id).orElse(null);
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -42,19 +43,20 @@ public class AvatarRaceController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public AvatarRace updateAvatarRace(@PathVariable(value = "id") final Long id, @RequestBody final AvatarRace data) {
-        AvatarRace avatarRace = avatarRaceRepository.findOne(id);
-        if (avatarRace != null) {
-            avatarRace.setName(data.getName());
-            avatarRace = avatarRaceRepository.save(avatarRace);
+        Optional<AvatarRace> avatarRace = avatarRaceRepository.findById(id);
+        if (avatarRace.isPresent()) {
+            AvatarRace realAvatarRace = avatarRace.get();
+            realAvatarRace.setName(data.getName());
+            return avatarRaceRepository.save(realAvatarRace);
         }
-        return avatarRace;
+        return null;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteAvatarRace(@PathVariable(value = "id") final Long id) {
-        final AvatarRace level = avatarRaceRepository.findOne(id);
-        if (level != null) {
-            avatarRaceRepository.delete(level);
+        Optional<AvatarRace> avatarRace = avatarRaceRepository.findById(id);
+        if (avatarRace.isPresent()) {
+            avatarRaceRepository.delete(avatarRace.get());
         }
     }
 

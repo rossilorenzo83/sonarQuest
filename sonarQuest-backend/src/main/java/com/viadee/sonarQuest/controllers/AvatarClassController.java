@@ -1,6 +1,7 @@
 package com.viadee.sonarQuest.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,7 +31,7 @@ public class AvatarClassController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public AvatarClass getAvatarClassById(@PathVariable(value = "id") final Long id) {
-        return avatarClassRepository.findOne(id);
+        return avatarClassRepository.findById(id).orElse(null);
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -43,20 +44,21 @@ public class AvatarClassController {
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public AvatarClass updateAvatarClass(@PathVariable(value = "id") final Long id,
             @RequestBody final AvatarClass data) {
-        AvatarClass avatarClass = avatarClassRepository.findOne(id);
-        if (avatarClass != null) {
-            avatarClass.setName(data.getName());
-            avatarClass.setSkills(data.getSkills());
-            avatarClass = avatarClassRepository.save(avatarClass);
+        Optional<AvatarClass> avatarClass = avatarClassRepository.findById(id);
+        if (avatarClass.isPresent()) {
+            AvatarClass realAvatarClass = avatarClass.get();
+            realAvatarClass.setName(data.getName());
+            realAvatarClass.setSkills(data.getSkills());
+            return avatarClassRepository.save(realAvatarClass);
         }
-        return avatarClass;
+        return null;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteAvatarClass(@PathVariable(value = "id") final Long id) {
-        final AvatarClass level = avatarClassRepository.findOne(id);
-        if (level != null) {
-            avatarClassRepository.delete(level);
+        Optional<AvatarClass> level = avatarClassRepository.findById(id);
+        if (level.isPresent()) {
+            avatarClassRepository.delete(level.get());
         }
     }
 

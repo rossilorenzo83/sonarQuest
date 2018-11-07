@@ -37,7 +37,7 @@ public class QuestService implements QuestSuggestion {
     private ParticipationRepository participationRepository;
 
     public Quest findById(final Long questId) {
-        return questRepository.findOne(questId);
+        return questRepository.findById(questId).orElse(null);
     }
 
     @Override

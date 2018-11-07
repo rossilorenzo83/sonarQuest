@@ -2,6 +2,7 @@ package com.viadee.sonarQuest.controllers;
 
 import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -53,19 +54,19 @@ public class AdventureController {
 
     @RequestMapping(value = "/world/{id}", method = RequestMethod.GET)
     public List<Adventure> getAllAdventuresForWorld(@PathVariable(value = "id") final Long world_id) {
-        final World w = worldRepository.findOne(world_id);
+        final World w = worldRepository.findById(world_id).get();
         return adventureRepository.findByWorld(w);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Adventure getAdventureById(@PathVariable(value = "id") final Long id) {
-        return adventureRepository.findOne(id);
+        return adventureRepository.findById(id).get();
     }
 
     @RequestMapping(value = "/getJoined/{world_id}", method = RequestMethod.GET)
     public List<Adventure> getJoinedAdventures(final Principal principal,
             @PathVariable(value = "world_id") final Long world_id) {
-        final World w = worldRepository.findOne(world_id);
+        final World w = worldRepository.findById(world_id).get();
         final User user = userService.findByUsername(principal.getName());
         return adventureService.getJoinedAdventuresForUserInWorld(w, user);
     }
@@ -73,7 +74,7 @@ public class AdventureController {
     @RequestMapping(value = "/getFree/{world_id}", method = RequestMethod.GET)
     public List<Adventure> getFreeAdventures(final Principal principal,
             @PathVariable(value = "world_id") final Long world_id) {
-        final World w = worldRepository.findOne(world_id);
+        final World w = worldRepository.findById(world_id).get();
         final User user = userService.findByUsername(principal.getName());
         return adventureService.getFreeAdventuresForUserInWorld(w, user);
     }
@@ -88,28 +89,30 @@ public class AdventureController {
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public Adventure updateAdventure(@PathVariable(value = "id") final Long id,
             @RequestBody final Adventure data) {
-        Adventure adventure = adventureRepository.findOne(id);
-        if (adventure != null) {
-            adventure.setTitle(data.getTitle());
-            adventure.setGold(data.getGold());
-            adventure.setXp(data.getXp());
-            adventure.setStory(data.getStory());
-            adventure = adventureRepository.save(adventure);
+        Optional<Adventure> adventure = adventureRepository.findById(id);
+        if (adventure.isPresent()) {
+            Adventure realAdventure = adventure.get();
+            realAdventure.setTitle(data.getTitle());
+            realAdventure.setGold(data.getGold());
+            realAdventure.setXp(data.getXp());
+            realAdventure.setStory(data.getStory());
+            realAdventure = adventureRepository.save(realAdventure);
+            return realAdventure;
         }
-        return adventure;
+        return null;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteAdventure(@PathVariable(value = "id") final Long id) {
-        final Adventure adventure = adventureRepository.findOne(id);
-        if (adventure != null) {
-            adventureRepository.delete(adventure);
+        Optional<Adventure> adventure = adventureRepository.findById(id);
+        if (adventure.isPresent()) {
+            adventureRepository.delete(adventure.get());
         }
     }
 
     @RequestMapping(value = "/{adventureId}/solveAdventure", method = RequestMethod.PUT)
     public Adventure solveAdventure(@PathVariable(value = "adventureId") final Long adventureId) {
-        final Adventure adventure = adventureRepository.findOne(adventureId);
+        final Adventure adventure = adventureRepository.findById(adventureId).orElse(null);
         if (adventure != null) {
             adventure.setStatus(AdventureState.SOLVED);
             adventureRepository.save(adventure);
@@ -122,16 +125,16 @@ public class AdventureController {
     @ResponseStatus(HttpStatus.CREATED)
     public Adventure addQuest(@PathVariable(value = "adventureId") final Long adventureId,
             @PathVariable(value = "questId") final Long questId) {
-        Adventure adventure = adventureRepository.findOne(adventureId);
+        Adventure adventure = adventureRepository.findById(adventureId).orElse(null);
         if (adventure != null) {
-            final Quest quest = questRepository.findOne(questId);
+            final Quest quest = questRepository.findById(questId).orElse(null);
             quest.setAdventure(adventure);
             questRepository.save(quest);
             if (adventure.getWorld() == null) {
                 adventure.setWorld(quest.getWorld());
                 adventureRepository.save(adventure);
             }
-            adventure = adventureRepository.findOne(adventureId);
+            adventure = adventureRepository.findById(adventureId).orElse(null);
         }
         return adventure;
     }

@@ -27,7 +27,7 @@ public class LevelController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Level getLevelById(@PathVariable(value = "id") final Long id) {
-        return levelRepository.findById(id);
+        return levelRepository.findById(id).orElse(null);
     }
 
 }

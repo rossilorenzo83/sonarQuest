@@ -2,6 +2,7 @@ package com.viadee.sonarQuest.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,8 +51,8 @@ public class AdventureService {
     }
 
     /**
-     * expects a developer object and the current world and returns the adventures
-     * that the developer has already joined.
+     * expects a developer object and the current world and returns the adventures that the developer has already
+     * joined.
      *
      * @param world
      * @param user
@@ -65,8 +66,7 @@ public class AdventureService {
     }
 
     /**
-     * expects a developer object and the current world and returns the adventures
-     * that the developer can still enter.
+     * expects a developer object and the current world and returns the adventures that the developer can still enter.
      *
      * @param world
      * @param user
@@ -87,18 +87,18 @@ public class AdventureService {
      * @return adventure
      */
     public Adventure removeUserFromAdventure(final long adventureId, final long userId) {
-        Adventure adventure = adventureRepository.findOne(adventureId);
+        Optional<Adventure> adventure = adventureRepository.findById(adventureId);
         final User user = userService.findById(userId);
-        if (adventure != null && user != null) {
-            final List<User> developerList = adventure.getUsers();
+        if (adventure.isPresent() && user != null) {
+            Adventure realAdventure = adventure.get();
+            final List<User> developerList = realAdventure.getUsers();
             if (developerList.contains(user)) {
                 developerList.remove(user);
             }
-            adventure = adventureRepository.save(adventure);
+            return adventureRepository.save(realAdventure);
+        } else {
+            return null;
         }
-
-        return adventure;
-
     }
 
     /**
@@ -109,18 +109,18 @@ public class AdventureService {
      * @return adventure
      */
     public Adventure addUserToAdventure(final long adventureId, final long userId) {
-        Adventure adventure = adventureRepository.findOne(adventureId);
+        Optional<Adventure> adventure = adventureRepository.findById(adventureId);
         final User user = userService.findById(userId);
-        if (adventure != null && user != null) {
-            final List<User> userList = adventure.getUsers();
+        if (adventure.isPresent() && user != null) {
+            Adventure realAdventure = adventure.get();
+            final List<User> userList = realAdventure.getUsers();
             if (!userList.contains(user)) {
                 userList.add(user);
             }
-            adventure = adventureRepository.save(adventure);
+            return adventureRepository.save(realAdventure);
+        } else {
+            return null;
         }
-
-        return adventure;
-
     }
 
 }

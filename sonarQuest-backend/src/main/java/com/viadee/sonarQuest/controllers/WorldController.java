@@ -2,6 +2,7 @@ package com.viadee.sonarQuest.controllers;
 
 import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -69,30 +70,32 @@ public class WorldController {
 
     @RequestMapping(value = "/world/{id}", method = RequestMethod.GET)
     public World getWorldById(@PathVariable(value = "id") final Long id) {
-        return worldRepository.findOne(id);
+        return worldRepository.findById(id).orElse(null);
     }
 
     @PreAuthorize("hasAuthority('FULL_WORLD_ACCESS')")
     @RequestMapping(value = "/world", method = RequestMethod.POST)
-    public World updateWorld(@RequestBody final World data) {
-        World world = this.worldRepository.findOne(data.getId());
-        if (world != null) {
-            world.setName(data.getName());
-            world.setActive(data.getActive());
-            world = this.worldRepository.save(world);
+    public World updateWorld(@RequestBody final World worldToUpdate) {
+        Optional<World> world = worldRepository.findById(worldToUpdate.getId());
+        if (world.isPresent()) {
+            World realWorld = world.get();
+            realWorld.setName(worldToUpdate.getName());
+            realWorld.setActive(worldToUpdate.getActive());
+            return worldRepository.save(realWorld);
         }
-        return world;
+        return null;
     }
 
     @PreAuthorize("hasAuthority('ACTIVE_WORLD_ACCESS')")
     @RequestMapping(value = "/world/{id}/image", method = RequestMethod.PUT)
-    public World updateBackground(@PathVariable(value = "id") final Long id, @RequestBody final String image) {
-        World world = this.worldRepository.findOne(id);
-        if (world != null) {
-            world.setImage(image);
-            world = this.worldRepository.save(world);
+    public World updateBackground(@PathVariable(value = "id") final Long worldId, @RequestBody final String image) {
+        Optional<World> world = worldRepository.findById(worldId);
+        if (world.isPresent()) {
+            World realWorld = world.get();
+            realWorld.setImage(image);
+            return worldRepository.save(realWorld);
         }
-        return world;
+        return null;
     }
 
     @PreAuthorize("hasAuthority('FULL_WORLD_ACCESS')")
