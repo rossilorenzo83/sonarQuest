@@ -9,6 +9,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.viadee.sonarquest.controllers.WebSocketController;
 import com.viadee.sonarquest.entities.Artefact;
 import com.viadee.sonarquest.entities.Level;
 import com.viadee.sonarquest.entities.User;
@@ -35,6 +36,9 @@ public class ArtefactService {
 
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private WebSocketController wsc;
 
 	public List<Artefact> getArtefacts() {
 		return artefactRepository.findAll();
@@ -60,7 +64,9 @@ public class ArtefactService {
 			levelService.createLevel(minLevel);
 			artefact.setMinLevel(minLevel);
 		}
-		return artefactRepository.save(artefact);
+		Artefact a = artefactRepository.save(artefact);
+		wsc.onCreateArtefact(a);
+		return a;
 	}
 
 	@Transactional

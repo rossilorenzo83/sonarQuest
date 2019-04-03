@@ -34,12 +34,12 @@
               <div flex>
                 <div layout="row">
                   <div flex-end>
-                      <div *ngIf=e.title>
-                          <span class="title">{{ e?.title }}</span>
-                        </div>
-                        <div *ngIf=e.story>
-                          <span class="text">{{ e?.story }}</span>
-                        </div>
+                    <div *ngIf=e.title>
+                      <span class="title">{{ e?.title }}</span>
+                    </div>
+                    <div *ngIf=e.story>
+                      <span class="text">{{ e?.story }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -47,6 +47,10 @@
           </div>
         </div>
       </div>    
+  </mat-card-content>
+  <mat-card-content>
+    <!--<button (click)="click()" >CLICK1</button>-->
+    <button (click)="something()" >something</button>
   </mat-card-content>
   <mat-card-content class="chat">
     <div>

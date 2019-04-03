@@ -18,8 +18,6 @@ export class EventPageComponent implements OnInit {
 
   constructor(
     private eventService: EventService,
-    private userService: UserService,
-    private imageService: ImageService,
     private wsSerive: WebSocketService
   ) { 
     this.eventService.events$.subscribe(events => {
