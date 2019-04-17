@@ -18,6 +18,7 @@ import com.viadee.sonarquest.skillTree.entities.UserSkillToSkillTreeUser;
 import com.viadee.sonarquest.skillTree.repositories.SkillTreeUserRepository;
 import com.viadee.sonarquest.skillTree.repositories.UserSkillRepositroy;
 import com.viadee.sonarquest.skillTree.repositories.UserSkillToSkillTreeUserRepository;
+import com.viadee.sonarquest.skillTree.services.GitService;
 
 @SpringBootApplication
 public class SonarQuestApplication implements CommandLineRunner {
@@ -28,7 +29,10 @@ public class SonarQuestApplication implements CommandLineRunner {
 	 * 
 	 * @Autowired UserSkillToSkillTreeUserRepository
 	 * userSkillToSkillTreeUserRepository;
+	 *
 	 */
+	@Autowired
+	private GitService gitService;
 
     public static void main(String[] args) {
         SpringApplication.run(SonarQuestApplication.class, args);
@@ -66,6 +70,8 @@ public class SonarQuestApplication implements CommandLineRunner {
 		 * rule:entry.getUserSkill().getSonarRules()) {
 		 * System.out.println(rule.getName()); } }
 		 */
+    	gitService.openRepo();
+    	gitService.readCommits();
     }
 
     @Bean
