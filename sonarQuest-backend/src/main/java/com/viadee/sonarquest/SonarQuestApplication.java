@@ -72,6 +72,7 @@ public class SonarQuestApplication implements CommandLineRunner {
 		 */
     	gitService.openRepo();
     	gitService.readCommits();
+    	//gitService.checkMerge();
     }
 
     @Bean

@@ -201,6 +201,7 @@ public class ExternalRessourceService {
 				.withComponentKeys(projectKey).withTypes(SonarQubeIssueType.CODE_SMELL).withSeverities(issueSeverities)
 				.pageSize(maxNumberOfIssuesOnPage).pageIndex(1).build();
 		// @formatter: on
+		LOGGER.warn(sonarQubeApiCall.toString());
 		final ResponseEntity<SonarQubeIssueRessource> response = restTemplate.getForEntity(sonarQubeApiCall.asString(),
 				SonarQubeIssueRessource.class);
 		return response.getBody();

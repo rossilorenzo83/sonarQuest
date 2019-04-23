@@ -1,1840 +1,1544 @@
-refs/heads/master
-nils.uhrberg@viadee.de
-Integrated mails into Dataset and optimize sorting/paging in the free task table
-1555418840 | commit c1c01dca9d569aca0dcfe4c79122ba150912bbcf 1555418840 ----sp
-nils.uhrberg@viadee.de
- When a task is completed, the stored skill is learned
-1555413813 | commit 33cf65c23c287a6cc5477b292772cd6feb85ed87 1555413813 ----sp
-nils.uhrberg@viadee.de
-Optimization of the first meeting meeting based on user story number 3, 4 and 5 completed
-1555338376 | commit 4f05287ad180fe0818c434f574e6ffa9082c65b5 1555338376 ----sp
-nils.uhrberg@viadee.de
-Optimization of the first meeting meeting based on user story number 1 completed
-1555320737 | commit 9365aace1b1b0b97ff4711c09201c979a0166fa8 1555320737 ----sp
-nils.uhrberg@viadee.de
-Added optimization of first review meeting based on User Story number 1
-1555082643 | commit 8c1e77fb1f9bbd5d4c042f921d20ff75c50f14bc 1555082643 ----sp
-nils.uhrberg@viadee.de
-Some optimization. Most DTOs have been removed from the skill tree. Now your repetitions count even over the number of repetitions required
-1554998752 | commit 6c3c159d7eeedf8eb06757be49125129a27daeb7 1554998752 ----sp
-nils.uhrberg@viadee.de
-Fix i18n after merge from master
-1554974351 | commit 5899067ae3811995f3306636a57e87d5355381c4 1554974351 ----sp
-nils.uhrberg@viadee.de
-Merge branch 'master' into skill-tree
-1554972746 | commit 6643ff29bfe151b4fbb482ef1fb1847a13526039 1554972746 ----sp
-bueschernico@gmail.com
-Wizard should always be readable (#210)
-1554964117 | commit 72d80038d7c20dd520cb001a5aa3245023d30ae5 1554964117 ----sp
-bueschernico@gmail.com
-Worldupdate (#211)
-1554964106 | commit 436febc85cf3d23b7e0f275811d5697704358875 1554964106 ----sp
-bueschernico@gmail.com
-Designupdate (#212)
-1554964093 | commit 8efe4c7fc4ce35bd1ee681505c3c121e35e113b1 1554964093 ----sp
-bueschernico@gmail.com
-on new message, Story scrolls down (#213)
-1554964082 | commit e277de619ad9d6551dcb38c4e5f394d81e145b10 1554964082 ----sp
-nils.uhrberg@viadee.de
- As Gamemaster you can now change the required repetitions of a UserSkill
-1554898453 | commit 84ad73b23b48a9329ceef40365f029c3a9bc89d3 1554898453 ----sp
-nicobuscher@Nicos-MBP.fritz.box
-on new message, Story scrolls down
-1554827551 | commit c98be0908448f82a0cf9d0aa665ff550ade3c962 1554827551 ----sp
-nico.buescher@viadee.de
-tooltip for Login
-1554825423 | commit 67909a8cbead5f136be43595c7b10276372cccce 1554825423 ----sp
-nico.buescher@viadee.de
-Empty Page looks better, choose Design is bugfree
-1554824867 | commit d451085833c2ab371778a236eed290e710fae7be 1554824867 ----sp
-nils.uhrberg@viadee.de
-Fix NullPointer in StandardTaskServiceTest.testFindByWorld
-1554814551 | commit 243bf94b7dc9fda903f040c1a31216b5bd4425eb 1554814551 ----sp
-nico.buescher@viadee.de
-clean up
-1554813214 | commit 7fa13ef26e114d24e0ed32a94574acdf06497b05 1554813214 ----sp
-nils.uhrberg@viadee.de
-As a developer, you will now receive your score of a Task in a Quest
-1554813135 | commit 8e50eb3dea2636827c4ea4b6814a50ced9c21fd7 1554813135 ----sp
-nico.buescher@viadee.de
-On userupdate, the assigned worlds are available without refresh
-1554805153 | commit bfd8db81de769bc86070f4ecb79360f0edb9895f 1554805153 ----sp
-nico.buescher@viadee.de
-Wizard should always be readable
-1554801640 | commit ede2d0c12d34bddb20f25e3450e01fb5006d7b31 1554801640 ----sp
-nils.uhrberg@viadee.de
-Merge remote-tracking branch 'origin/skill-tree' into skill-tree
-1554800412 | commit 5ba8be9d9a91b94fbe7e065c6793c8bf76d9ebf1 1554800412 ----sp
-nils.uhrberg@viadee.de
-Get Scoring for Standard Task. 
-1554800405 | commit faa1ab864c883f827bf64192a77a72e604d4e765 1554800405 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Updated the skill-tree branch with the changes on master (#209)
-1554492275 | commit 8f15ea521fa2351f07095bbd552111ab2c3fd886 1554492275 ----sp
-xhr@DESKTOP-SBD50L1.fritz.box
-Fix: issue_rule may be NULL (and length is 256 like all VARCHAR fields)
-1554491874 | commit dbe7908ab082ae1532358f9cd04e65b2f886b0c3 1554491874 ----sp
-nils.uhrberg@viadee.de
- Added feature to get the score of a team when creating new quests as gm
-1554474000 | commit ba292a405aabc441a657fcf1b95c5e146af0941a 1554474000 ----sp
-mec@viadee.de
-Equals method newly generated
-1554376961 | commit f3b856deb7eef0713a8d07e5174790f1c4640a96 1554376961 ----sp
-mec@viadee.de
-Packages corrected
-1554376869 | commit 888991435a97a1d13bc9607fe5e0e203a79508d1 1554376869 ----sp
-nils.uhrberg@viadee.de
-Merge branch 'master' into skill-tree
-1554367916 | commit 9e466ea4677509303a00f67ed46a44dfb24f0340 1554367916 ----sp
-48205130+nuhrberg@users.noreply.github.com
-Structure expanded for issue_rule (#208)
-1554366904 | commit 6470a41d8169bfbb5bd2f7c99d281a7a4622cee3 1554366904 ----sp
-nils.uhrberg@viadee.de
-Structure expanded for issue_rule
-1554303909 | commit 8ca71140584ed575b15950b1ea78df66e3adb580 1554303909 ----sp
-b69@NBWXW381.intern.viadee.de
-Artefact update with event
-1554301053 | commit 3b1b1117909702b259029ed21587679aaed636b4 1554301053 ----sp
-nils.uhrberg@viadee.de
-Now when you learn a skill the score of the skills in your personal skill-tree is recalculated
-1554299508 | commit e5e2313943794a0d8328539a908269177ef167a6 1554299508 ----sp
-nils.uhrberg@viadee.de
-Added skill-tree view for each role in FE
-1554215742 | commit 0922c6394b4c056d3c2165d62261eaeb8ce6e09b 1554215742 ----sp
-nils.uhrberg@viadee.de
-Added SQRule import in BE
-1554191962 | commit 33fc4340e767a9056fade30f62321e5d85db4e71 1554191962 ----sp
-nils.uhrberg@viadee.de
-Added Rest Method to learn Skill
-1553867744 | commit 95ac68c8af11f9953a2c90d8f111481a2b413ead 1553867744 ----sp
-nils.uhrberg@viadee.de
-Required Repetitions added to UserSkill
-1553854588 | commit 09ed06aea3ae5ff1c7d257b05047f6ed38a557f0 1553854588 ----sp
-nils.uhrberg@viadee.de
-Fix i18n for Skill-Tree & optimize mail validation 
-1553798708 | commit cf63767ab2b2601b63e8d524bb035036b4e155a4 1553798708 ----sp
-nico.buescher@viadee.de
-merge master
-1553797349 | commit 0d9c0ce6b076db9ccdf1e5189d0d72a4e56a2cc8 1553797349 ----sp
-nils.uhrberg@viadee.de
-Fix i18n de
-1553796528 | commit 6c743cf50b18152ed2e7279cf82216b00a7b545b 1553796528 ----sp
-nils.uhrberg@viadee.de
-Fix i18n en
-1553796410 | commit 962b1117be16f2a5d559107590c2b2a4b6c2a106 1553796410 ----sp
-nils.uhrberg@viadee.de
-Merge branch 'master' into skill-tree
-1553795516 | commit 285ca57586e4fb716c96ad74e128d3cebd8cf728 1553795516 ----sp
-nico.buescher@viadee.de
-WebSockets for Events
-1553789183 | commit ac611bc4457b5e1777014eeb205abaef5c0a24ab 1553789183 ----sp
-48205130+nuhrberg@users.noreply.github.com
-Add email to user (#205)
-1553785591 | commit fd160ca9c207523e7f463f91d4b702f1b684d095 1553785591 ----sp
-nils.uhrberg@viadee.de
-Added validation to admin user edit
-1553784748 | commit ebef9119205d0793eb30ddf2adede4edc936399f 1553784748 ----sp
-nils.uhrberg@viadee.de
-Added possibility to save the mail of a user
-1553780823 | commit 7cf299aa5edba114576900e0c53b9f2350bfb92f 1553780823 ----sp
-nils.uhrberg@viadee.de
-Add function for generating general skill tree and skill tree by user ID
-1553775845 | commit abfc06d14bb8f6e1e260d13b54d08c390a5059d7 1553775845 ----sp
-nils.uhrberg@viadee.de
-Merge branch 'master' into skill-tree
-1553695178 | commit da1ba9a0fd7bd507af11a402713c59b46f65de61 1553695178 ----sp
-nils.uhrberg@viadee.de
-Optimize Skill-Tree in FE
-1553695140 | commit 0a1445c0bf4cfa2f0275b33493c027df7e67b016 1553695140 ----sp
-nico.buescher@viadee.de
-websockets works
-1553693184 | commit e51cc3c888f0992498509db4983ec257549d7027 1553693184 ----sp
-nils.uhrberg@viadee.de
-Data loading and visualization of NGX graph optimized
-1553616482 | commit b57a148cabdbc9db6c28da724b560daf93ea9b8c 1553616482 ----sp
-nils.uhrberg@viadee.de
-Implemented first NGX hierarchial Graph for skill groups and skills
-1553612867 | commit ae4f00f513fd6b4732200833798a964a55b2dbd0 1553612867 ----sp
-nico.buescher@viadee.de
-NoClassDefFoundError
-1553611104 | commit 6befcf32af171ad06ba38c75c6e93f2f51736c7f 1553611104 ----sp
-xhr@DESKTOP-SBD50L1.fritz.box
-Sorting issues by severity when choosing them for a quest as gm
-1553547291 | commit 2536ba62c37e859e8e66c12070271d0c2066a8f4 1553547291 ----sp
-xhr@DESKTOP-SBD50L1.fritz.box
-Typo
-1553544896 | commit 31048d66b8839d00c2b34faf45bc2a305ce33167 1553544896 ----sp
-mec@viadee.de
-0.6.3-SNAPSHOT
-1553537538 | commit c88d0e93f8c5c6ed92209bc9ed3f37cbc1c0babe 1553537538 ----sp
-mec@viadee.de
-0.6.2-RELEASE
-1553537224 | commit efe75908e1fb94e49752c161f9f2fb1bc44a6ba1 1553537224 ----sp
-mec@viadee.de
-Fixes #198
-1553537138 | commit 5a17c14fa095b7ce5a6e23b51094ddcb42b9b5c5 1553537138 ----sp
-mec@viadee.de
-String formatting only conditional
-1553533383 | commit 456c443db6d92d05da6083e0b3389d9ff08039f5 1553533383 ----sp
-mec@viadee.de
-String formatting only conditional
-1553531598 | commit 8b36d245635555d0c1e04ed81ae588b8adf721cd 1553531598 ----sp
-mec@viadee.de
-OWASP dep checker deactivated
-1553531560 | commit e1189bcfe2a5884b30b7d5d0533317c9f3a107f2 1553531560 ----sp
-mec@viadee.de
-Remove unused Logger
-1553529522 | commit c4045087b46b273ce0731761cc55958ca4e1b130 1553529522 ----sp
-nils.uhrberg@viadee.de
- UserSkillGroup structure implemented in the backend
-1553509147 | commit 37ee0fe871ce56df79936d6416cfcfd3f554d4e4 1553509147 ----sp
-nils.uhrberg@viadee.de
-Add frontend .vscode/ to gitignore
-1553173808 | commit 4b8921275d3c4013afa21a0577121cf845e0c69e 1553173808 ----sp
-nils.uhrberg@viadee.de
-First fundamental material treeview added
-1553173673 | commit 974d304571d0d19bc0e288fc846ecb1a5961a63b 1553173673 ----sp
-nils.uhrberg@viadee.de
-Add i18n en skill-tree info
-1553081314 | commit ce7251c7232b21807148ba214eb91527d00d47ea 1553081314 ----sp
-nils.uhrberg@viadee.de
-Add skill-tree component to Frontend
-1553081279 | commit 606a82a387214c4256380d4eba7bd0b841e2f9cd 1553081279 ----sp
-nils.uhrberg@viadee.de
-Add more test data for the skill-tree
-1553081176 | commit 49df157ca8dc721fac6b6bc68202afe406a644ef 1553081176 ----sp
-nils.uhrberg@viadee.de
-Add basic project structure and functionality for the skill-tree
-1553011458 | commit a9788c2b9f9e36b104580d787e14174113428e07 1553011458 ----sp
-nils.uhrberg@viadee.de
-Insert Skill-Tree (test) data in SQL
-1553011402 | commit dad10ef9567d0e0dc27973564ceb69c3c92782c0 1553011402 ----sp
-christopher.brown@viadee.de
-Cors für WebSockets konfiguriert
-1552991086 | commit 94bca697b2f53fb77d6f4448424465c9e6354a01 1552991086 ----sp
-nico.buescher@viadee.de
-not working
-1552987358 | commit ad736b4e1246933a6fbb7134c882f863f25fb554 1552987358 ----sp
-nils.uhrberg@viadee.de
-Removed duplicated dependency in pom.xml
-1552922794 | commit e649f365888af1ada51b581253da841bea96d449 1552922794 ----sp
-mec@viadee.de
-0.6.2-SNAPSHOT
-1552911912 | commit f74c00dbcc8ea35c0dee6ee5ff5c74925811c4f4 1552911912 ----sp
-mec@viadee.de
-0.6.1-RELEASE
-1552911831 | commit c392fecc572f56e66749ccb6962964f7332fb9a7 1552911831 ----sp
-mec@viadee.de
-@Transactional
-1552910853 | commit ac35546d191b63c9bcfcc9533c97c76485f2abd0 1552910853 ----sp
-mec@viadee.de
-Trailing slash removed in sonarqube server url when saving
-1552909353 | commit 599b376464af0e2570735226739bf69cf38a9de4 1552909353 ----sp
-mec@viadee.de
-gm can now jump to the issues when creating a quest
-1552908701 | commit b87fd5b29c3a3a1248f7d059db778e6cadea71e7 1552908701 ----sp
-mec@viadee.de
-Fixes #196
-1552904831 | commit 7190c8f1c138428814a52d5ec19aa00f00314a4c 1552904831 ----sp
-mec@viadee.de
-Tests for the ArtefactService
-1552691170 | commit f6662bf68ce666ee56e0a3b5ccc598922d0fb16d 1552691170 ----sp
-xhr@DESKTOP-SBD50L1.fritz.box
-Tests for the ArtefactService
-1552690574 | commit 5293f9db26930bb1a78120e6a3eb23b2ad374a6d 1552690574 ----sp
-mec@viadee.de
-Refactor: rename
-1552684319 | commit 3bbdb3e28fcf467f609e289bd9cb32852d27012d 1552684319 ----sp
-mec@viadee.de
-UserService.save is now transactional
-1552572575 | commit a23a01f7085d264953c873248b2d9b96109ed390 1552572575 ----sp
-mec@viadee.de
-Test
-1552429608 | commit fbb7b6ccc54524ed3a087c46df8f82c6e7fed896 1552429608 ----sp
-xhr@DESKTOP-SBD50L1.fritz.box
-Fixes skill saving issue on artefacts
-1552429433 | commit 26c1d89795d541e8e9f824a176b58fb8605cc485 1552429433 ----sp
-mec@viadee.de
-Fixes level.level refactoring
-1552412866 | commit d5b322c892f3bc2c0945c07a9d19d0c2f810a3eb 1552412866 ----sp
-mec@viadee.de
-Bugfix: Level renaming
-1552409851 | commit 90e4c18618caab174ddd14d098d37b821714fc8e 1552409851 ----sp
-mec@viadee.de
-Fixes marketplace artefact details
-1552404712 | commit 976496cdf817d1ffde0d48b21252df61972f6095 1552404712 ----sp
-mec@viadee.de
-Angular 7 bugfixes: templates w/ protected vars
-1552404079 | commit 4841c960c24c2c14e08d96993215d4f52b4acdda 1552404079 ----sp
-mec@viadee.de
-Angular 7 fix: --env=prod replaced with --prod
-1552397141 | commit 8ef563656817f521f98033a7afbe3fd3a0c160c1 1552397141 ----sp
-mec@viadee.de
-0.6.1-SNAPSHOT
-1551963346 | commit 1eed897b621ced78624b6ea0419b44c8e3e49317 1551963346 ----sp
-mec@viadee.de
-0.6.0-CN1
-1551963261 | commit 29bfd2069ae80eaca95b356c05052c9c169b274e 1551963261 ----sp
-nico.buescher@viadee.de
-merge
-1551877650 | commit 1d089e555bd70102fd96b4d01671e54b712cb8b8 1551877650 ----sp
-nico.buescher@viadee.de
-Merge branch 'story' of https://github.com/viadee/sonarQuest into story
-1551867910 | commit 1f36eb2f70ce3601b004c1d45094a0876422b9be 1551867910 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' into story
-1551866461 | commit 8c5751eb7c5bd71152833081610741136c966890 1551866461 ----sp
-nico.buescher@viadee.de
-merge
-1551865841 | commit f91897b97ea5aa906c99923465d8c7a5af4d6380 1551865841 ----sp
-nico.buescher@viadee.de
-merge
-1551865766 | commit 4d2fac87c0e04a464278e1b058f287a2184c6d8e 1551865766 ----sp
-nico.buescher@viadee.de
-config
-1551864918 | commit 81657ad13ae268c8e9f4523f21ada45fa38a0e0d 1551864918 ----sp
-48205130+nuhrberg@users.noreply.github.com
-Remove superfluous IOException from UserController (#194)
-1551810389 | commit 2faef418d32c8d7b1872505df5faec555e1c0bd6 1551810389 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Remove superfluous IOException from UserController (#193)
-1551801559 | commit 1dca21302748c4f5482197537db065415083b628 1551801559 ----sp
-nico.buescher@viadee.de
-fixes #181
-1551795716 | commit 99c4f96e1d1d6d5a2f8fc5772fc9012a8ca4808a 1551795716 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest
-1551792247 | commit 64c6038d0432f4333b22a36a537206ff970c6bdf 1551792247 ----sp
-nils.uhrberg@viadee.de
-Remove superfluous IOException from UserController
-1551782203 | commit 6b593b33ebb9bbe130f137871b4990a075c1a2c5 1551782203 ----sp
-christopher.brown@viadee.de
-Fixes Issue #151
-1551775089 | commit 7fb8d064cbf54d1216a3efc735e1e9390638b84b 1551775089 ----sp
-mec@viadee.de
-Import fixed
-1551773506 | commit c7edcba24868afe73e3739ea9362ab776b84eb6c 1551773506 ----sp
-mec@viadee.de
-Flyway script naming fixed
-1551773170 | commit 24c017a826778a7811c6baf72a299043ecc422d8 1551773170 ----sp
-mec@viadee.de
-Bugfix restored: Display level 1 when dev has not yet played
-1551773030 | commit 48242fbf31ecf10293df386ef9824cbd010f7f4f 1551773030 ----sp
-mec@viadee.de
-Import fixed
-1551773010 | commit 833d5e4f67307d063a14345680f4a460a78e6758 1551773010 ----sp
-christopher.brown@viadee.de
-Issue151 (#191)
-1551772479 | commit 4bd4d4c8e2458bab8eb7ed1d4acede28f76f8009 1551772479 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge branch 'master' into issue151
-1551772429 | commit b87ca5fe4961cbae1b321014c2b18ead409dbc2f 1551772429 ----sp
-MeC@NBWXW484.intern.viadee.de
-Shields.io Stargazers
-1551715612 | commit 1a21941885342da12cb8893cdc8ab4abbd6d8ed4 1551715612 ----sp
-MeC@NBWXW484.intern.viadee.de
-Shields.io License
-1551715467 | commit 9f9a4ec635dd2c0db8ad6648ecfb65c1cc917452 1551715467 ----sp
-MeC@NBWXW484.intern.viadee.de
-Shields.io Badge Release
-1551713930 | commit 4699a026c2e19be380966816fb55ffa8a5fb84cc 1551713930 ----sp
-MeC@NBWXW484.intern.viadee.de
-Shields.io Badge Release
-1551713814 | commit 218dae0eaad1daf54d77145981c4969df1129c75 1551713814 ----sp
-MeC@NBWXW484.intern.viadee.de
-Shields.io Badge Release
-1551713756 | commit 40d5d359967f0173cb3ebfed24f3e7c7107ca1b8 1551713756 ----sp
-mec@viadee.de
-Bugfix: Display level 1 when dev has not yet played
-1551453054 | commit 25aa6ef75a40f24db8bdae8f3d038143a9ddd047 1551453054 ----sp
-mec@viadee.de
-Angular CLI Update
-1551453020 | commit ab5ff997e38799e05d9db16fb92d8b9e80ada83e 1551453020 ----sp
-simonschulte1991@gmail.com
-Update from Angular 5 to 7 (#190)
-1551452018 | commit 928668cec583b3b8d869f926efe710f4f667aaa4 1551452018 ----sp
-mec@viadee.de
-fixes issue #182
-1551350417 | commit 2e45232b59fe99a5a93aefc05882c0de7e349648 1551350417 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1551343169 | commit c3553d031d50c72ee0c776fa932042ecd7a3cd54 1551343169 ----sp
-mec@viadee.de
-Coding Night News
-1551343158 | commit 217dfd11a364387c3ec2f5b0238ee04386f7b5ea 1551343158 ----sp
-simonschulte1991@gmail.com
-Usability improvement: "New adventure" button disabled depending on state (#189)
-1551301743 | commit 89c93ef7829bb357f460ee14fc30d9f573e0e0ce 1551301743 ----sp
-christopher.brown@viadee.de
-Fixes Issue #151
-1551301455 | commit acecc02b2bd43476752af3214a02a445eff4070a 1551301455 ----sp
-nico.buescher@viadee.de
-refactoring
-1551301062 | commit 74d0b64aa6f8cf115720f60eb1ffbe19e7895fc6 1551301062 ----sp
-33547613+hak6593@users.noreply.github.com
-#183 SonarQuest FE / Quests / Rework quests presentation layout (#187)
-1551300223 | commit 3bf61cf1eb45d36977dbc042c612410ff7585d50 1551300223 ----sp
-kevin.haase@viadee.de
-#183 SonarQuest FE / Quests / Rework quests presentation layout
-1551300036 | commit de454ec088dbcfcdc85d5bb37aaee4a2467d72c9 1551300036 ----sp
-mec@viadee.de
-Bug: Permission renaming rolled back
-1551298974 | commit 3e1e00c791f28682281ed1883d0407694c5105da 1551298974 ----sp
-frank.koehne@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest
-1551296758 | commit f648c3cbf52db26bfa0ef0d61342a44cd39b4444 1551296758 ----sp
-frank.koehne@viadee.de
-More Sonar code smells removed, i.e. #161.
-1551296571 | commit ae13c344fd8ccc0b72b9abad823db713b37bdaf1 1551296571 ----sp
-christopher.brown@viadee.de
-Issue168 (#186)
-1551296425 | commit bbd03facdb1471a369ec93b98e559cb50e596164 1551296425 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge branch 'master' into issue168
-1551296416 | commit a707b9ea431d7bc1827d90e8ab3cd5ae5cb3cedb 1551296416 ----sp
-christopher.brown@viadee.de
-Issue #168
-1551295748 | commit 42936f6e1f39bf2368efdb02b85a6008a5d2ce6d 1551295748 ----sp
-mec@viadee.de
-Coding Night News
-1551294505 | commit 8195e46892aac3bcb510e31d08751b1c20261420 1551294505 ----sp
-simonschulte1991@gmail.com
-fix(my-avater-edit): translation of placeholders (#185)
-1551291881 | commit 8d02b25fa9199e052d5be80981b137432958d20c 1551291881 ----sp
-frank.koehne@viadee.de
-Fixed #184 - DB file confusion on backend docker run.
-1551291302 | commit 250b234787021ba7345a8d6ed245b89c83ae0862 1551291302 ----sp
-christopher.brown@viadee.de
-Issue161 - SonstQubeServerTest korrigiert.
-1551289495 | commit a348dd91ac080557614851a960f91aef4e75d28e 1551289495 ----sp
-mec@viadee.de
-Coding Night News
-1551280967 | commit 05680c83d675fdcd355795aa18ae48b36b239403 1551280967 ----sp
-mec@viadee.de
-Coding Night News
-1551272058 | commit a969fe6edee4957e8e432192f8a0f561b724c4be 1551272058 ----sp
-mec@viadee.de
-Coding Night News
-1551272006 | commit a5aeb87cc7d42e973ec587dc81d853f2f716147a 1551272006 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1551248922 | commit f6e7815ebc93d0bd2e9fee30431901bad2b432a5 1551248922 ----sp
-mec@viadee.de
-1st SQ CN announcement
-1551248911 | commit 18f9f975327f714a439484590533e03b57403574 1551248911 ----sp
-nico.buescher@viadee.de
-install Stomp and SockJS
-1551192023 | commit db34ef7248256d9b6d35e4af9e8302a86d9fc73d 1551192023 ----sp
-nico.buescher@viadee.de
-design forward
-1550771962 | commit 404169deb53e1ddcc182d9c0cea9adb77ac91e65 1550771962 ----sp
-mec@viadee.de
-Refactoring update methods
-1550758747 | commit 50b47727e732d43459c754061df8c2a76b5ff466 1550758747 ----sp
-nico.buescher@viadee.de
-New in story: Artefacts, Quest complete, New Day
-1550708980 | commit 4ee01acfe8587fca034fac8051099922bf286f4b 1550708980 ----sp
-nico.buescher@viadee.de
-Clean up the controller
-1550680593 | commit dc1166b283c4ffa764bc4c9d275690935d396f6b 1550680593 ----sp
-nico.buescher@viadee.de
-New Quests creat a new Event and Messages have the picture from the user
-1550675073 | commit ab5ef44dd997d1659fd96f23747c6a72e54f77d4 1550675073 ----sp
-nico.buescher@viadee.de
-bugfix
-1549979222 | commit cc2daefe4d409100a19958f8e15bb3445d50cb5c 1549979222 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' into story
-1549976692 | commit 8d453afb0aed42ba27cd119114df039419eae96a 1549976692 ----sp
-nico.buescher@viadee.de
-update style and clean up
-1549976651 | commit 271c5b7f359acba23c23546cff6c70da74d94966 1549976651 ----sp
-mec@viadee.de
-Bugfix: missing levels in dev list
-1549633030 | commit 9192844f8d25646ec7aa86147855e2c831bc302f 1549633030 ----sp
-mec@viadee.de
-Skills are displayed by their name
-1549629801 | commit 2ef45ed5a5866a6835a0f081ce1ac06a2bb5362b 1549629801 ----sp
-mec@viadee.de
-MP tweaks
-1549626334 | commit 09464f2520a3c33e259697d56bffde7ac5826ec2 1549626334 ----sp
-mec@viadee.de
-Fixed issue #173 - lots of MP bugs squashed
-1549623774 | commit 457d4f7ed586077c87a2be43744b248874f33bb0 1549623774 ----sp
-mec@viadee.de
-.gitignore
-1549613533 | commit e241059105189eb43d7a7204afe80ee71fc25e76 1549613533 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Set theme jekyll-theme-time-machine
-1549015035 | commit 25c5e7594466506150de41940c8146d8f18b6360 1549015035 ----sp
-bueschernico@gmail.com
-show user role when admin edit user (#180)
-1548882978 | commit 567d0cecaf7637641fae8efed93ae32f13e89a7e 1548882978 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' into story
-1548864994 | commit d76cb3f9a795ee91175b636b9c51dbb41f8d23af 1548864994 ----sp
-nico.buescher@viadee.de
-show user role when admin edit user
-1548864729 | commit abf84ca363992c2a807561e3e6848605aa9364c6 1548864729 ----sp
-nico.buescher@viadee.de
-Message Design
-1548863634 | commit d689710fb957a2aeafe5323a2a9ab7714e0539b5 1548863634 ----sp
-mec@viadee.de
-RaS solution for player avatars
-1548857799 | commit 2c8b867d11e370539c92c2cfd8e0b88b95539a3f 1548857799 ----sp
-mec@viadee.de
-Ava classpath
-1548842657 | commit f1ea5b2d4fad593fd54dc4db121e806fa6aeff1b 1548842657 ----sp
-mec@viadee.de
-Ava classpath
-1548841404 | commit 881eb211dba03ec690a70826039e049c090e7aea 1548841404 ----sp
-mec@viadee.de
-Dir of avatars
-1548839409 | commit d4c41deef96fdb6dc965c4cf95e0b374c483f9f6 1548839409 ----sp
-mec@viadee.de
-Dir of avatars
-1548835883 | commit 505703ffa123888c30d1f714576b2d7eb9038045 1548835883 ----sp
-mec@viadee.de
-Avatar loading bug fixed
-1548834791 | commit 56a6d9bd77cc675839a107511a67386775d9f4fb 1548834791 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1548833212 | commit 9ee96bd2b832656309e057bd938b391bbd54cd2b 1548833212 ----sp
-mec@viadee.de
-Moved avatars (2)
-1548833199 | commit 43328b2b2b00206f0b62922bbe9b5d4b630ecd3e 1548833199 ----sp
-mec@viadee.de
-Issue #174 Level -> SQLevel for Oracle DBs
-1548794084 | commit c40c9fffb4f051aacb582f361ff8fd7cdfe3ab9c 1548794084 ----sp
-mec@viadee.de
-Issue #174 User table renamed to SQUser for Oracle DBs
-1548793455 | commit 593c2191c9a38199fcaecfcccb6a11733a452696 1548793455 ----sp
-mec@viadee.de
-Moved avatars
-1548769382 | commit e9bcb021cac991a5b815e931f819903c0bb01fa0 1548769382 ----sp
-nico.buescher@viadee.de
-Chat autocomplete off
-1548768667 | commit 5ccb4bb476fab34500a3b5a0a356a9b809826d0f 1548768667 ----sp
-nico.buescher@viadee.de
-Cleanup app.component
-1548767755 | commit 4512478b2904d6d5c2313ad15ba0d94e12548f51 1548767755 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' into story
-1548765005 | commit b918f54500b9fce456c0c3fa0045ee0d9052515a 1548765005 ----sp
-mec@viadee.de
-Corrected an error with prod/dev environment in the Dockerfile
-1548764115 | commit 9dd8bfd692e1d4e1a03b1d0622f6224046188849 1548764115 ----sp
-nico.buescher@viadee.de
-Merge branch 'master' into story
-1548677082 | commit 5e0b5c452d4414d98243edd0b94c077103662597 1548677082 ----sp
-nico.buescher@viadee.de
-Fix design issues
-1548428904 | commit d302610e2bc070d8a480fa96675c0244c883b547 1548428904 ----sp
-nico.buescher@viadee.de
-User can send messages to current world
-1548425605 | commit 4e40ca3f07479f45e4735231ed989ffb3cc6be32 1548425605 ----sp
-JohannesDienst@t-online.de
-Update installation.md (#179)
-1548423445 | commit aa476700389baf7d452e23fa748e0600051e77de 1548423445 ----sp
-sebastian.sirch@viadee.de
-refactor dockerfiles and nginx setup to get it ready to be deployed on k8s (#176)
-1548406019 | commit 945be6665220e4eeb79f70ad2c1dbc5b1a1bd7ac 1548406019 ----sp
-nico.buescher@viadee.de
-User can send messages
-1548340240 | commit 74f849338aabd21f69063c7b038e07767b608624 1548340240 ----sp
-nico.buescher@viadee.de
-Create new table EVENT
-1548249664 | commit a77cd1b8416febb4ca7d29d847965d5a6ce22827 1548249664 ----sp
-michael.landreh@gmail.com
-Added LoginPage and changed standard routing from root path to my avatar page. Furthermore some hard coded strings are replaced by references.
-1548186855 | commit 6c6ff5545e067049d5f010742d590921b79e04fa 1548186855 ----sp
-nico.buescher@viadee.de
-name changes
-1548094372 | commit 424950fc0c2727b03647a0c77a0df0d8e541328d 1548094372 ----sp
-nico.buescher@viadee.de
-edit test
-1548092876 | commit 6ed94eea46db693c73e761357b36e59041a43ccc 1548092876 ----sp
-nico.buescher@viadee.de
-Merge branch 'story' into storytomaster
-1548092553 | commit 63c61597397f4fc407247aa005f92562939b4ab2 1548092553 ----sp
-nico.buescher@viadee.de
-create page story
-1548075081 | commit d1df4415a35e6372462354525e8c11a44d1899d0 1548075081 ----sp
-mec@viadee.de
-Clean up
-1548064136 | commit e490de32c790be9426395a1a9ae919031c7ca0fc 1548064136 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1548063381 | commit 5e4747246ac34bba27aac01f28f14a4ea6f1af9c 1548063381 ----sp
-mec@viadee.de
-Fixed issue retrieval/reward bug with default severities
-1548063372 | commit 764fd59d9074216709bd4de6103ad28c5c8d8d85 1548063372 ----sp
-rol@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1547804409 | commit a79dbd3d86a3e88d1934196e6a782c69ca64a6ed 1547804409 ----sp
-RoL@viadee.de
-SonarQube-Issue fixed
-1547804309 | commit 327860c3232ceba4082e94f64c4b0be88c8e0a12 1547804309 ----sp
-RoL@viadee.de
-SonarQube-Issue fixed
-1547803779 | commit 7ab39f6c0182cf61895ede01214a7bcdd7193e63 1547803779 ----sp
-mec@viadee.de
-Default BG on empty page
-1547658579 | commit 834d4abcd5e66e4c20f2d9126944296c9c6aca50 1547658579 ----sp
-mec@viadee.de
-Deletion of quests and adventures improved
-1547075843 | commit 8bc3e2730da9e9b065c05f6224701c46280a33d0 1547075843 ----sp
-mec@viadee.de
-Issue #171
-1547057719 | commit f0a8efd9aae078c5d91b8db73b3e3621beca89c5 1547057719 ----sp
-mec@viadee.de
-Eternal typos killed
-1547054327 | commit a05e1fd1873e6f22d26bff68690e6ae21b4aacc2 1547054327 ----sp
-mec@viadee.de
-Test
-1547040584 | commit fdb09d9ce76dfb97cfea2b3a4c4b6896321be228 1547040584 ----sp
-mec@viadee.de
-JWT 0.9.1
-1547040557 | commit 9687fea37a74fdf0c2ae51d6a1877008e022a57f 1547040557 ----sp
-mec@viadee.de
-Fix: Design switching was buggy when switching btwn accounts
-1546802284 | commit 22dc1a317e5038d8bb80784d6911c38dc5b09bcc 1546802284 ----sp
-mec@viadee.de
-Fix Issue #172
-1546800614 | commit edf46de72ce128ebbb14c1fd8aa05edd1996a272 1546800614 ----sp
-mec@viadee.de
-0.5.2-SNAPSHOT
-1546789060 | commit 3466cc42ceb6d2bdceae01fd4787f3615c0d8548 1546789060 ----sp
-mec@viadee.de
-New service getFreeForWorld to retrieve all free tasks
-1546787580 | commit 9967a7e9aadce606941fadf7b2cc338cc3e28e80 1546787580 ----sp
-mec@viadee.de
-Adventures can only be created when the current world has quests
-1546787453 | commit dd1124e35aeceb9b64b5dc641395272e1503dd73 1546787453 ----sp
-mec@viadee.de
-Warning message improved
-1546787395 | commit 5d7e94472758aa9dea203e4a5435d1c602344273 1546787395 ----sp
-mec@viadee.de
-Feature: admin can now see all worlds which the developers have joined
-1546784785 | commit 2f694f7f3084b57684c9e36889773ac45a1ca3e4 1546784785 ----sp
-mec@viadee.de
-Feature: admin can now see all worlds which the developers have joined
-1546784457 | commit fdf1234d01090818b977d24f49b3caa76e0e80dc 1546784457 ----sp
-mec@viadee.de
-Fixed issue #150
-1545512028 | commit 811ddc3d5a79dc3fa7402c5d54546c64e8d1406e 1545512028 ----sp
-mec@viadee.de
-Cleanup
-1545512014 | commit bdae0f31a0f74bc50710bf48c824c305e020eb86 1545512014 ----sp
-mec@viadee.de
-GM buttons to create adventures and quests are disabled when no world is active
-1545170247 | commit 35384f1f4b59a7bf0b2a66f71c1c5a7321e04f5c 1545170247 ----sp
-mec@viadee.de
-Fix: no table headers when no world is active
-1545169322 | commit 96a20451131db0fa063eab487820b134eeece321 1545169322 ----sp
-mec@viadee.de
-Various translation fixes w/ artefacts and skills
-1545168534 | commit a58c9f3b9cfcc1595472c08ef5f7dbf7521a70fb 1545168534 ----sp
-mec@viadee.de
-Fixed translation when world is not selected
-1545168505 | commit 19211c04631881aa29784088153677c9b45c92a6 1545168505 ----sp
-mec@viadee.de
-Fix: disable issue retrieval from server when no world is active
-1545144491 | commit 5114a4ecb43520f4f89ae597e41c1fbfca99bad6 1545144491 ----sp
-mec@viadee.de
-Bugfix: user passwords were broken when the admin edited a player
-1545144427 | commit a929f0e690236db0a6839d819f9d1706010697de 1545144427 ----sp
-mec@viadee.de
-Issue #1 View details of artefacts in the marketplace
-1545138998 | commit a0e1c54152d45e9f35060af3021bd3cf37dec4e7 1545138998 ----sp
-mec@viadee.de
-Fix: new marketplace items, tooltips and initial data loading
-1545130830 | commit 9a1819a02cd8284381c6204437fc43c955f9f9b0 1545130830 ----sp
-mec@viadee.de
-Marketplace active for DEVELOPER and GAMEMASTER as default
-1545128390 | commit d725548b8d0444840a7aa005c25f77d45baedb39 1545128390 ----sp
-mec@viadee.de
-Marketplace must not be visible if the role/permission is not granted
-1545127545 | commit 7b400883609093b9212853a8e580533c35758584 1545127545 ----sp
-mec@viadee.de
-Issue #127 fixed (Usability Icons in Quest acceptance)
-1545060142 | commit 943ceab30b43b173ee01eef3435586103c9d7882 1545060142 ----sp
-achimabeling@web.de
-Issue161 (#169)
-1545050479 | commit 36db4fb4bc9848ca9f83b4d5747b1a9280a4ab8e 1545050479 ----sp
-mec@viadee.de
-Simple fix for issue #99
-1545032776 | commit ecd5392324114376879f32bb3b9e9f25007e6e09 1545032776 ----sp
-mec@viadee.de
-Screenshot of avatar page renewed
-1545030035 | commit e53a529ffbfabb294c37438efa2016563c1bebc0 1545030035 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Issue162 (#165)
-1545029347 | commit 87521ad49a2b45e58166fe22dc8db240acb15fa1 1545029347 ----sp
-mec@viadee.de
-MySQL specific setup documentation added
-1545028935 | commit 18df50a95c2f73d1cb854c902d08b895292793db 1545028935 ----sp
-mec@viadee.de
-Changed the default application.properties to one with H2 db due to failing tests and renamed the mysql file.
-1545028461 | commit da55729cd64e4da8670af2cfd768f6d76bef479c 1545028461 ----sp
-achimabeling@web.de
-Issue #162: added mysql specific flyway script to change collation of Task (#164)
-1545027453 | commit fed6f54c153e183ed5f1f8935452d7adc6317c47 1545027453 ----sp
-mec@viadee.de
-Contents switched by accident
-1544799611 | commit fc7b555cede4d415fec7cb09f8ca93b52b554348 1544799611 ----sp
-mec@viadee.de
-Migrate task.task_key to VARBINARY
-1544799480 | commit b35a60352804a062dacaca978df1e4e8c67fcda6 1544799480 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltips
-1544797913 | commit 2ed9ae06d655bd6f9976989c3e68628b10ff2e53 1544797913 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltips (gm pages)
-1544601250 | commit a1e909844c747ed0451c9ed2fb7f4caab02131fc 1544601250 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltips
-1544600814 | commit 5c080b77dd09cc6447733278184993765b304703 1544600814 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltips
-1544600581 | commit 06f88660d7b7190808483c64b8d9c563a645be36 1544600581 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltips
-1544600481 | commit a3275d4f4db1e36dab8e0eefc89add646e782146 1544600481 ----sp
-mec@viadee.de
-Issue #163 - button design and tooltip for avatar page
-1544599987 | commit 69f11e45079a85a2c9e62feaad9faccb34e65f2e 1544599987 ----sp
-mec@viadee.de
-0.5.1-SNAPSHOT
-1544102531 | commit 16999b4f6569b6a53794e2d6959d45d11e04ab8b 1544102531 ----sp
-mec@viadee.de
-Release 0.5.0 preps
-1544101491 | commit f3b9b151c0ee40a2e22decdd090308cdcbe2a309 1544101491 ----sp
-mec@viadee.de
-GutterSize of the questcards set to 10px
-1544101293 | commit f4bf3a014fccca97bc4b8f91d7ee200506b0b91b 1544101293 ----sp
-mec@viadee.de
-Typo fixed
-1544101273 | commit 1473619974d3d54afa9fb0192a45cdc767b873bf 1544101273 ----sp
-mec@viadee.de
-Merge branch 'questcards'
-1544100627 | commit 1111cb4bbf1ed456f4c7ab2cd6cacc7acebe59c1 1544100627 ----sp
-mec@viadee.de
-Bugfix: newly created quests had visible always set to 'null'
-1544098988 | commit ed94803a645bc31e0d56a19aa6873f7b5fa9504f 1544098988 ----sp
-mec@viadee.de
-Questcard layout for players (selectable in the admin ui)
-1544042713 | commit bb5e64702fbed0fff8799d03fb2f0a0a2eec0890 1544042713 ----sp
-mec@viadee.de
-Questcards
-1543523348 | commit 1c686e2eedc6deafeb6573d2d5cc4181a182b2b5 1543523348 ----sp
-mec@viadee.de
-Issue #160 (Quests can be set visible or hidden)
-1543411355 | commit 5d1713ca8258ab423a802f578494ebd6276eb2b1 1543411355 ----sp
-mec@viadee.de
-Unused field removed
-1543137989 | commit 3334c022c7911a20bcad071f601e0c21c8ba24fa 1543137989 ----sp
-mec@viadee.de
-Solved issue #152
-1543096056 | commit 909a872a38f0e5c3771e8259a303b77172cbee97 1543096056 ----sp
-mec@viadee.de
-CleanUp
-1543093968 | commit d95b9ebfec6a13f4a3121e11265a09796d6c3555 1543093968 ----sp
-achimabeling@web.de
-issue #157: fixed table name in Permission; fixed database migration files to work with mysql (#158)
-1542992819 | commit 4edcc73626de7259f4eecb909425320756a57b59 1542992819 ----sp
-frank.koehne@viadee.de
-Merge pull request #156 from JohannesDienst/master
-1542643697 | commit 8740186f9a53b9045cc9304bce70cc2f73a42426 1542643697 ----sp
-johannes.dienst@deutschebahn.com
-Correct typo
-1542642351 | commit b6af66c3feed8ffcc9e6bb5d039d4329884c12ec 1542642351 ----sp
-mec@viadee.de
-0.3.1-SNAPSHOT
-1542441683 | commit 13124ddedb18d677a42d2fa3b99bfca31ac0eb83 1542441683 ----sp
-mec@viadee.de
-0.3.0
-1542441467 | commit df0a19a5d63f9cee8f9c9381a09d56368894e4f6 1542441467 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1542441011 | commit c51ccdd73511ce7bc3a61a855b7e57560a30f0c7 1542441011 ----sp
-mec@viadee.de
-Fixed issue #145 and added translation to the 2 tables
-1542440984 | commit c524459d49588b10dd4615c7413db75ca3acb434 1542440984 ----sp
-mec@viadee.de
-Removed 'story' from the quest overview (since it causes layout mayhem)
-1542198197 | commit 0f29d67a476edaa7bfc0b41e19a05819fdb3cc60 1542198197 ----sp
-mec@viadee.de
-FIX: avatar showing level min requirement
-1542192955 | commit 005d0ce83799df805c22c11ad133a7e276e2a3c5 1542192955 ----sp
-mec@viadee.de
-Fix: XP progress numbers and XP bar
-1542191976 | commit c5b024e198c79b6c72a5a434ff93cd584999c9dd 1542191976 ----sp
-mec@viadee.de
-Fix: NPE/DIV by 0 when showing avatars of players without XP
-1542191161 | commit a1c88700527cc75095f81b284dcfa96fb1a05c7f 1542191161 ----sp
-mec@viadee.de
-Table column sizes adjusted
-1542189933 | commit 89b8f0a6c6a1791567f069b6c932b21da5423507 1542189933 ----sp
-mec@viadee.de
-Version 0.3.0
-1542130303 | commit 5c66a3d9db9e2d7d366eb2131847fe922b30e177 1542130303 ----sp
-mec@viadee.de
-0.2.9
-1542130046 | commit be2714ff1bf1d2d93b637bf203f0cb66822d57dd 1542130046 ----sp
-mec@viadee.de
-Fixed issue #153
-1542129887 | commit 3cab06b86eb32e3ece9ba8762950ce23fc290ba5 1542129887 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Issue134 (#154)
-1542128593 | commit 6083ff29996b2c90acac24b0ee74ef09f8541f61 1542128593 ----sp
-mec@viadee.de
-Parameter removed
-1542093493 | commit 8077272d59571444ad6d373305dde7db549179a7 1542093493 ----sp
-mec@viadee.de
-tslint line length disable
-1542092851 | commit 8b6a464b4254c3e444eb2758973fcc03885444e0 1542092851 ----sp
-mec@viadee.de
-Login icon is now a portal
-1542092434 | commit 008113943bd35c87cb832678a128a315af28a0dc 1542092434 ----sp
-mec@viadee.de
-New service ParticipationService#getAllMyParticipations
-1542036285 | commit 51337d0f4fe29dff80f4aad1245a258d54e93798 1542036285 ----sp
-mec@viadee.de
-New service ParticipationService#getAllMyParticipations
-1542035971 | commit fcaa2663e8bbdada132afc7172617b979f6f6ed9 1542035971 ----sp
-mec@viadee.de
-Initial
-1541592762 | commit bf49d8f732da92aa786a86fd2b10cea7294154ba 1541592762 ----sp
-mec@viadee.de
-Fixed issue #118
-1541544535 | commit 8e059502d86fd39f2fc7c88d12f1ea407e6f1bd0 1541544535 ----sp
-mec@viadee.de
-Solved issue #144
-1541542064 | commit 402e81ed08b42808af41b31cddc5bbc13e66735a 1541542064 ----sp
-mec@viadee.de
-Format code
-1541542035 | commit c305a3fbeccb221688688d81fafe6df1f43439a3 1541542035 ----sp
-mec@viadee.de
-0.2.9-SNAPSHOT
-1541181172 | commit 5fec3ed58e8370389ba906a1009754f5183b54ea 1541181172 ----sp
-andreas.hellmann@posteo.de
-iissue #39: Added Avatar- image column to developers listing. Waiting for issue #140 being solved, to display images in browser
-1541158221 | commit c9072f8727aed5784755033c95320fe53f8b00ad 1541158221 ----sp
-mec@viadee.de
-Fixed issue #137, issue #141 (solving adventures)
-1541158162 | commit c11214fb3a9759618d84d227ef6289b09ad79d9e 1541158162 ----sp
-mec@viadee.de
-Logging fix
-1541157953 | commit bab09d633d186d7e8ff1b50a47b75282db5db6da 1541157953 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1541154761 | commit 562c06f8c7bd1a61628752e8dd24909588475d45 1541154761 ----sp
-mec@viadee.de
-Fix: Only open quests are addable to new adventures
-1541154714 | commit c2073ce963f55683d7524d9fafcbc10aee8ac849 1541154714 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge pull request #138 from viadee/issue136
-1541149479 | commit 0ed87693564435ec6b3a6996d4ae855a2c0b7bbb 1541149479 ----sp
-andreas.hellmann@posteo.de
-Added tooltips for buttons User-Profile, Background-Transparency, Login / Logout on top-bar
-1541148211 | commit b7068e1ffc759c6670c00bce974fde54ecf4df2b 1541148211 ----sp
-mec@viadee.de
-issue#125 gm can see players participating in a quest
-1540223205 | commit a722f7f5fe7f3b5117d728f9c4ec4961d3febf25 1540223205 ----sp
-mec@viadee.de
-issue#125 gm can see players participating in a quest
-1540221808 | commit fc7796ae62d67d9fecb0e54fc2e18496d731fabe 1540221808 ----sp
-mec@viadee.de
-Refactoring - Constant moved, doc added
-1540194307 | commit 247520739c0a4e2465edffc9e253e277019e0bae 1540194307 ----sp
-mec@viadee.de
-Issue #111 fixed
-1539884924 | commit dd7e390ddf2be581c0c9ebd47f3015f79bbd0f62 1539884924 ----sp
-mec@viadee.de
-#111 fixed
-1539884890 | commit abf1301e8c0c1c54cb5c51659947e0b25b813070 1539884890 ----sp
-mec@viadee.de
-Wizard Feature
-1539881620 | commit 56ad3931ceac79ce0f3ded7a5d5ceb3aaec505c4 1539881620 ----sp
-mec@viadee.de
-0.2.8-SNAPSHOT
-1539032058 | commit 8e92c94079932d3de2fb05b641a3095078d51d7a 1539032058 ----sp
-mec@viadee.de
-0.2.7.1-Release
-1539031852 | commit aa68ccad3aea4bea47f992ad0685bf1510f50907 1539031852 ----sp
-mec@viadee.de
-Bugfix with paying rewards when solving all tasks on a quest manually as gm
-1539030600 | commit 5964683cfa44d675492b04e28f0f3a4445cdb85e 1539030600 ----sp
-mec@viadee.de
-Bugfix with paying rewards when solving all tasks on a quest manually as gm
-1539030583 | commit 33735709430a215226866609f2293275d4ae66b0 1539030583 ----sp
-mec@viadee.de
-0.2.7-Release
-1539008088 | commit c612f611b1989eae24f1107029fbb11c89e897ed 1539008088 ----sp
-mec@viadee.de
-Bug: Double Quest rewards fixed
-1539008028 | commit 4237503cbe3edcbbbd849ac15d510ed54e547846 1539008028 ----sp
-mec@viadee.de
-0.2.7-SNAPSHOT
-1538947379 | commit 540c75bfc28258bac66be98d3ee51b9cc73e7f27 1538947379 ----sp
-mec@viadee.de
-0.2.6.1-RELEASE
-1538947234 | commit b3b44624efdbbbf8a09d5ef0fbce8d02c1a6e2da 1538947234 ----sp
-mec@viadee.de
-@Transactional quest update
-1538946657 | commit e800e78c119a1a0312f5e2588dfcac7195d698b3 1538946657 ----sp
-mec@viadee.de
-Bug analysis quest reward bug
-1538946283 | commit 3134f3f62f3f173d30d0f0b3c553ef2d2defad61 1538946283 ----sp
-mec@viadee.de
-Some translation issues fixed
-1538941062 | commit d298d058fb762858c456a1ce868c6956702615a0 1538941062 ----sp
-mec@viadee.de
-Log fixed
-1538733522 | commit a34c536cc243838451918a22d65bb623c3e613a4 1538733522 ----sp
-mec@viadee.de
-Table column name severity added
-1538731938 | commit d65ff85d29f7ad3ed5615c616b0e8854203043aa 1538731938 ----sp
-mec@viadee.de
-Table column name severity added
-1538731918 | commit 60500e7768d30878cad12a69cb7dbc0fd526c05e 1538731918 ----sp
-mec@viadee.de
-Translation fixed
-1538731646 | commit cbbf255855116f865bfedafc973187b7ef0790af 1538731646 ----sp
-mec@viadee.de
-Api calls with search components now must have the qualifiers parameter
-1538654411 | commit 998aa6a65aae28afb5290cf5eb37ad82d44c89eb 1538654411 ----sp
-mec@viadee.de
-0.2.6-SNAPSHOT
-1538642518 | commit b86c39da3923d02903463d31e700c7ffbe6f5b58 1538642518 ----sp
-mec@viadee.de
-0.2.5-RELEASE
-1538641711 | commit 0a44dbc9b418df036a40e816aad962a7bc728f4f 1538641711 ----sp
-mec@viadee.de
-java.util.Objects.hashcode instead of nullcheck
-1538377401 | commit 8bd785be5e7f794fb6cb4501e10207d94b25fff0 1538377401 ----sp
-mec@viadee.de
-Refactoring SonarQube api calls into separate builder
-1537967875 | commit f03d36c11a399a48013fe81482801784c014d8db 1537967875 ----sp
-mec@viadee.de
-Logging improved and constant extracted
-1537804653 | commit a1b882ff8a7115a6163f4ee5edffbe3830adebbe 1537804653 ----sp
-mec@viadee.de
-User save added after awarding gold and xp
-1537536534 | commit 696d5051b38ef8c42aaa09c4750dfa7ec4563b68 1537536534 ----sp
-mec@viadee.de
-Cleanup
-1537391945 | commit 2b4d3cbcae5b5fa12ac695948129cb7fc4b0b034 1537391945 ----sp
-mec@viadee.de
-Issue partitioning added - when retrieving lots of issues this is now done in chunks plus logging
-1537391723 | commit 2f2d648295f36312511123f052d5219d3cd57942 1537391723 ----sp
-mec@viadee.de
-DRY/Constants
-1537270477 | commit 4cd04863d05241bd015178dcfcba3ccdf7c72a47 1537270477 ----sp
-mec@viadee.de
-Format
-1537178539 | commit 0ab45621575ca3d2dc6b89deeedc9fa9d720e820 1537178539 ----sp
-mec@viadee.de
-Refactoring constant into enum
-1537178462 | commit 6ee706647688a2b75e281cfc89f69fa82b53f9f4 1537178462 ----sp
-mec@viadee.de
-Refactoring constant into enum
-1537177968 | commit 234dee2747bf8c36c85191b770cfeae16631bfe3 1537177968 ----sp
-mec@viadee.de
-Todo for refactoring to enum addded
-1537169345 | commit 87a3d4a3a19925595ef4617919afc8827d3578f2 1537169345 ----sp
-mec@viadee.de
-Refactoring constant into enum
-1537169277 | commit 55b149f6d49f5b521013ab1845d83970e1e2d401 1537169277 ----sp
-mec@viadee.de
-NPE Fix
-1535469278 | commit 4c80c7d835ca25f74a2d28690eac80558978d080 1535469278 ----sp
-mec@viadee.de
-Refactoring
-1535468777 | commit ce09c23f84e99928a5345ab7221c619985e9fdc9 1535468777 ----sp
-mec@viadee.de
-Test imports corrected
-1532942402 | commit 3618770a6476753f1c36680cb952622caa35e610 1532942402 ----sp
-37378879+h-huss@users.noreply.github.com
-Merge branch 'master' into add-desirability-score
-1532940461 | commit 4ee5099fad667cccfefce8d6cb3883e50c0d72bf 1532940461 ----sp
-mec@viadee.de
-Logging added when getting SonarQube tasks
-1532095541 | commit 14e121b09175c1e4740bd96bffd61dde3326e2ca 1532095541 ----sp
-mec@viadee.de
-0.2.5-SNAPSHOT
-1532031596 | commit 1e49c93d020e3b43b906eea54062f2ad415f73b5 1532031596 ----sp
-mec@viadee.de
-0.2.4-RELEASE
-1532031497 | commit 5282668b2dcf0972ac77b4e5d966ffc8cd1bdbd8 1532031497 ----sp
-37378879+h-huss@users.noreply.github.com
-Minor refactorings
-1532008475 | commit ea6d98f0636faf330e390a2bf92e9cbf70ff6837 1532008475 ----sp
-37378879+h-huss@users.noreply.github.com
-Don't block the ui while updating scores
-1532003330 | commit 4f2e08728902d06a119646d0e363795d60a394e6 1532003330 ----sp
-mec@viadee.de
-String::hashcode used for logging the username
-1532002598 | commit 2a4efb4d443018959e58e716c8110c22c269e1d2 1532002598 ----sp
-mec@viadee.de
-Logging for users who log in (frontend and backend)
-1531994944 | commit 75713caebd7792b4d3c022d580ec9ae4c7e356d4 1531994944 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1531994075 | commit 961ede60a5d22608baa5e472c2e822393487d0a5 1531994075 ----sp
-mec@viadee.de
-Logging for users who log in (frontend and backend)
-1531994041 | commit c613b0e8ae278f89ef7a96ffcf5dcfd87c2e385a 1531994041 ----sp
-37378879+h-huss@users.noreply.github.com
-Merge branch 'master' into add-desirability-score
-1531993234 | commit d2389259588e65ded26a075efc804f0fff3676d4 1531993234 ----sp
-37378879+h-huss@users.noreply.github.com
-Make random key more random
-1531993056 | commit f403098124904f814ca976cd470cd5a11091f097 1531993056 ----sp
-37378879+h-huss@users.noreply.github.com
-Merge remote-tracking branch 'origin/add-desirability-score' into add-desirability-score
-1531992033 | commit df22d87857d4e5a0dc1f3bb4fc97cf9f14039ba5 1531992033 ----sp
-christopher.brown@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest
-1531990987 | commit 677233cdf417162d55df95a1601275bf5f341768 1531990987 ----sp
-christopher.brown@viadee.de
-BugFix - Signing key replaced by random value.
-1531990969 | commit b9ccc9eff622804ce9cea5ed893b75f44922c7c8 1531990969 ----sp
-christopher.brown@viadee.de
-BugFix - Signing key replaced by random value.
-1531990942 | commit ae40b7e770d8a7156e5d68d799709f67be5494fb 1531990942 ----sp
-mec@viadee.de
-Typo
-1531990586 | commit 46dfb65c4542929427eb4a9d56886e183849fb3e 1531990586 ----sp
-37378879+h-huss@users.noreply.github.com
-Update heading
-1531990531 | commit bd6fa786c6a33bdb259103bd6cffafd2b344dbf3 1531990531 ----sp
-mec@viadee.de
-Documentation and predefined avatars cards added
-1531990132 | commit 3b9601806a692741abce2897e47358c785e98254 1531990132 ----sp
-mec@viadee.de
-Documentation and predefined avatars cards added
-1531990043 | commit 1baea7dee144ae08c1eab573a1bda5224593942e 1531990043 ----sp
-mec@viadee.de
-Wrong Level/Xp stats corrected in user dev
-1531989562 | commit 2dd82516c0f0067461be5b16b909ad78634ff944 1531989562 ----sp
-mec@viadee.de
-Merge remote-tracking branch 'origin/master' into basic_avatars
-1531987572 | commit 0342b3af466ec4c59ba9d3e584480d0e5b854fad 1531987572 ----sp
-MeC@NBWXW484.intern.viadee.de
-Basic set of 12 avatars added
-1531935252 | commit 39d7fafbb22d281f13afdd7c819f1873eb99d316 1531935252 ----sp
-MeC@NBWXW484.intern.viadee.de
-Basic Account information added
-1531928113 | commit 89118de7974bf9ce600ede29f468c536cc106081 1531928113 ----sp
-MeC@NBWXW484.intern.viadee.de
-Basic Account information added
-1531928015 | commit dfaaba2121814d344e0a0570a6d34c63aec5c3ca 1531928015 ----sp
-37378879+h-huss@users.noreply.github.com
-Add Desirability-Score UI
-1531922280 | commit b77e27059f1ae3233e1e3cf2803768bd0ef86528 1531922280 ----sp
-37378879+h-huss@users.noreply.github.com
-Exclude git serverInfo from json
-1531837926 | commit d0cef767e61eefb7251dfab894b6b90e3d9149de 1531837926 ----sp
-37378879+h-huss@users.noreply.github.com
-Merge branch 'master' into add-desirability-score
-1531835642 | commit d680cd996e2d34b14f3498e589954cf8a6b7ed39 1531835642 ----sp
-37378879+h-huss@users.noreply.github.com
-First, simple usage of the Desirability-Score
-1531834869 | commit 07d575576f76bc416f30d006a99ed28dbeb02a5c 1531834869 ----sp
-christopher.brown@viadee.de
-Merge branch 'level-refactoring' of https://github.com/viadee/sonarQuest
-1531757171 | commit 55f440b9922dffa69396cbc460dc8cfa226e0d28 1531757171 ----sp
-christopher.brown@viadee.de
-Bugs fixed. GamemasterAddFreeTaskComponent refactored.
-1531756546 | commit c0aadbe39ffb28d1b38bbda6dc44e05bb5084f05 1531756546 ----sp
-frank.koehne@viadee.de
-GmbH -> AG.
-1531742501 | commit 16bad472c00dd209f59da72cf64b352f5002981a 1531742501 ----sp
-bjoern.meschede@viadee.de
-Merge branch 'add-travis-for-sonarcloud'
-1531731053 | commit 4e16f6d3743813b2f10689467edc23610ad95fdb 1531731053 ----sp
-bjoern.meschede@viadee.de
-comments added
-1531729457 | commit 16786e3c71a6a4b1a898df8a2355ad81a79a9594 1531729457 ----sp
-bjoern.meschede@viadee.de
-Included sonar-token
-1531728819 | commit b84a88fef05eabb788944ebcb6cd0f8bf05ace26 1531728819 ----sp
-bjoern.meschede@viadee.de
-Integrated maven-build for sonarcloud
-1531727157 | commit ce1fa903d5688aac64fd3ca92ecc0c6c686987f4 1531727157 ----sp
-bjoern.meschede@viadee.de
-Moved SonarCloud back to branch add-travis-for-sonarcloud
-1531727033 | commit 85e2d5fb0a2d5b96cfd8ad5bd3c17990d0841b27 1531727033 ----sp
-christopher.brown@viadee.de
-BugFix
-1531726431 | commit c1e50f6a60b0063802df9f3c351289527beb6483 1531726431 ----sp
-bjoern.meschede@viadee.de
-SonarCloud: backend-switch before script removed
-1531724939 | commit a6e10dd8a20d459e9d8287e85924956f14c56b1c 1531724939 ----sp
-bjoern.meschede@viadee.de
-Fix: Removed whitespaces in travis.yml
-1531723507 | commit f2a7cd2e5a9975f7b659012b9b3c9c1c11196cf7 1531723507 ----sp
-bjoern.meschede@viadee.de
-try and error: sonarcloud integration
-1531520057 | commit 671cb0ad4cc6130e60063d4feeab452f405991ee 1531520057 ----sp
-bjoern.meschede@viadee.de
-Added github URL to pom
-1531520024 | commit 91834a9eb3b48584f0c2ef85ad0153e71703c1d0 1531520024 ----sp
-bjoern.meschede@viadee.de
-sonar.properties are not needed when using maven
-1531517895 | commit 6974e0ba75b30e6d7463880a33e03ca1986d5ef3 1531517895 ----sp
-bjoern.meschede@viadee.de
-added maven build for sonarcloud
-1531517148 | commit 0018602c91538b204481b261d2917a405f105fcc 1531517148 ----sp
-bjoern.meschede@viadee.de
-added sonar-project properties for sonarcloud
-1531513703 | commit 62b56dfd8f1fa11e4ddd36820a86bb19d1e1724a 1531513703 ----sp
-bjoern.meschede@viadee.de
-ReadMe: Level Calculation Doc Added
-1531512159 | commit 549de271c81795f97080b5ed10afadb050bb0f1f 1531512159 ----sp
-bjoern.meschede@viadee.de
-Added Level calculation docs and data
-1531511543 | commit ce31eb464f71487c05dd4c0eb9c0e80f0a107978 1531511543 ----sp
-michael.landreh@gmail.com
-Added SonarCloud encrypted secure token to travis.yml
-1531498045 | commit 1737e54c9483c5b10d028de5f5ea26adb11a939c 1531498045 ----sp
-christopher.brown@viadee.de
-Fixed Tests
-1531494110 | commit df35489d4ecd9a76e146eb6199c762d355f274a9 1531494110 ----sp
-Bjoern.Meschede@viadee.de
-WIP: Refactoring LevelService  Issue
-1531488054 | commit 683bc24fac2b90f22ef65eb9f0a44a988d161a66 1531488054 ----sp
-Bjoern.Meschede@viadee.de
-Merge branch 'fix-status-issue'
-1531485947 | commit 54bb960e79e0f931b80475526b1652dfe1df6d78 1531485947 ----sp
-Bjoern.Meschede@viadee.de
-Fixed getFreeTasks
-1531485920 | commit 6f151a7d8836eabe580df3e892be51182266162e 1531485920 ----sp
-Bjoern.Meschede@viadee.de
-SonarQuestStatus: Refactoring
-1531484803 | commit 1df505b7778767d859c529d464d86472d91a5414 1531484803 ----sp
-mec@viadee.de
-0.2.4-SNAPSHOT
-1531122411 | commit 8b5e071201fdb77725ef99b72bd5da24288a4dd2 1531122411 ----sp
-bjoern.meschede@viadee.de
-Refactoring: SonarQuestStatus
-1530858904 | commit 7b97afe3db16d045bb93faf76242ff1f8ddecdd2 1530858904 ----sp
-mec@viadee.de
-Solved tasks are crossed out (DEV view)
-1530796226 | commit b894fb40d03dff8e101933d7050eda3ad0c26503 1530796226 ----sp
-mec@viadee.de
-Solve all button / Solved tasks are crossed out
-1530795884 | commit 394239d8978bc9b25126066683a190eb5837dd40 1530795884 ----sp
-mec@viadee.de
-German translation changed
-1530792691 | commit e985dc1acb75a71bf199ebc847b6295be1c74f96 1530792691 ----sp
-bjoern.meschede@viadee.de
-Feature: Gamemaster can solve task manually
-1530788597 | commit c160d1b0dd24efa89606ac1911d1ab06d11007b2 1530788597 ----sp
-bjoern.meschede@viadee.de
-Fix: NullPointerException in PermissionController
-1530784587 | commit bc453118c2d7348a757314ccc6cc1a2465e3687f 1530784587 ----sp
-bjoern.meschede@viadee.de
-Fix: AllFreeTasks
-1530784535 | commit 743049e12489e06f7d2fc2b539be409e3bf50d6b 1530784535 ----sp
-mec@viadee.de
-Merge branch 'master' of https://github.com/viadee/sonarQuest.git
-1530781496 | commit ec8e116f3e67d9b2309ab63da6b47541b2a828ec 1530781496 ----sp
-mec@viadee.de
-0.2.3-SNAPSHOT
-1530781485 | commit 0dd4f9380cff8f551c17aa917f5277d733ebd848 1530781485 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge pull request #107 from aabeling/master
-1530781114 | commit 81548d75890c180e34bdf537e19e6176b11e2afd 1530781114 ----sp
-mec@viadee.de
-0.2.2-RELEASE
-1530781090 | commit faedd9258769215025e9252ec3a2d166f5f24d21 1530781090 ----sp
-bjoern.meschede@viadee.de
-Fix: Fetching tasks from SonarQube
-1530780875 | commit e1d315a65ca4a953c39cd6cbf1be61053d56b4f1 1530780875 ----sp
-achim.abeling@md.de
-added another Dockerfile which allows external configuration
-1530779498 | commit 41e39d590adb366a8ac75c4a8d8cd893a3586fd9 1530779498 ----sp
-bjoern.meschede@viadee.de
-OVSS level set to 9
-1530779386 | commit b2cb224e393cea63a8248e1cd1d803bd373ee762 1530779386 ----sp
-bjoern.meschede@viadee.de
-added OWASP dependency-Check
-1530778534 | commit 459e09e769e6c1e1b2df59f1b093ca0ed45f30fb 1530778534 ----sp
-bjoern.meschede@viadee.de
-Database: Extended story length
-1530776717 | commit 6ed8ccfb21dfeb17199e23e7ba9d901a74e833dc 1530776717 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge pull request #104 from CatLipka/master
-1530775332 | commit 0c3301815dce688ae17124d4f72ba27c5b779b08 1530775332 ----sp
-catherine.lipka@md.de
-improved login status styling
-1530773383 | commit 821e56d659d4fa248fa0177064a331ccae47b5cf 1530773383 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge pull request #103 from hstolzenberg/master
-1530772809 | commit 03fa3fdcfa64733bc47b47c5cefe139268ba67be 1530772809 ----sp
-hinne.stolzenberg@md.de
-revert to default env variables
-1530772267 | commit 49f55237c173eb252bc7e866a4f7e70dc4da315b 1530772267 ----sp
-hinne.stolzenberg@md.de
-remove console log
-1530772098 | commit 32863de6d2f02f0e18c3a8a72b42b531826222ec 1530772098 ----sp
-hinne.stolzenberg@md.de
-fix environment variables - change login dialog to be more intuitive
-1530771216 | commit f2b391227cc218a761194bb87a645fc52a9e75c0 1530771216 ----sp
-mec@viadee.de
-https://github.com/viadee/sonarQuest/issues/101
-1530736649 | commit 7e0d5e5f94ff3fc61dffc76c4f9651d088e2ce9f 1530736649 ----sp
-35367476+Christoph-Meyer@users.noreply.github.com
-Merge pull request #100 from aabeling/master
-1530718356 | commit b882403eda8061b43be8f2059d7e18749e40ac00 1530718356 ----sp
-achim.abeling@md.de
-added Dockerfile for the frontend served by nginx
-1530718015 | commit b908121a24776c97ab05e5065d25eabb4dbc886d 1530718015 ----sp
-bjoern.meschede@viadee.de
-Merge branch 'mobilcom-debitel-workshop'
-1530716618 | commit 128eab9e7d811dfc31c4dd6ed3e1969e1a9ca9c3 1530716618 ----sp
-bjoern.meschede@viadee.de
-Fix: Update of StandardTask
-1530716597 | commit 0294ba94fe9e2a44bb98423815556f9c181c5770 1530716597 ----sp
-mec@viadee.de
-Test for loading avatars
-1530711966 | commit 6c51056ad35d2d6e14ba6ab3dd79e61c7387bb30 1530711966 ----sp
-mec@viadee.de
-Bugfix loadAvatar is only executed when user != null
-1530706034 | commit 2b6228f4b413113661de159ac11d361cacbd446c 1530706034 ----sp
-mec@viadee.de
-Bugfix missing state
-1530705704 | commit 6e4eb2929d3ddd5c692694e0c53173af1392b420 1530705704 ----sp
-bjoern.meschede@viadee.de
-Fix: Avatars now available in backend
-1530699509 | commit 2e56872cab4384d845c94d884efba30ea0ecfbca 1530699509 ----sp
-bjoern.meschede@viadee.de
-Merge branch 'new-avatars'
-1530697655 | commit deb52ef6be7436d8e8f564a829a770cecf5b37f4 1530697655 ----sp
-bjoern.meschede@viadee.de
-Fix: SonarQube http basic auth field input is now hidden
-1530695353 | commit b53c109199be46d0517d6191a006cf1b8ae681c2 1530695353 ----sp
-bjoern.meschede@viadee.de
-Fix: Import of class Token
-1530694512 | commit ef8b7f4083dc6b678801656c3b731d7cad540659 1530694512 ----sp
-mec@viadee.de
-0.3.0-SNAPSHOT
-1530691697 | commit f70c15026d529ff34b132f01f18edbd20d6a8142 1530691697 ----sp
-bjoern.meschede@viadee.de
-New avatars for FedEx-Day
-1530688795 | commit 4482acc009d85671d40779dd709880448e2c8384 1530688795 ----sp
-bjoern.meschede@viadee.de
-Fixed ITest for StandardTask and Spring-Hibernate-Cache-"Bug"
-1530645574 | commit 98cc66253967a0bbbc47ec0919fd2f0ace22c896 1530645574 ----sp
-bjoern.meschede@viadee.de
-Bug in StatusUpdate found and marked
-1530572503 | commit b3ff14a14ba7658c81f798f2dd64b5535ec534bc 1530572503 ----sp
-bjoern.meschede@viadee.de
-Test fixed - new bug found ;)
-1530572465 | commit 3b0c9e28cffadf4bb14ebe2b297d85f8e5c1f411 1530572465 ----sp
-bjoern.meschede@viadee.de
-Test fixed
-1530558487 | commit 49e956b5fccf89f230c7f53b3bb5a2e6960d0115 1530558487 ----sp
-Bjoern.Meschede@viadee.de
-Refactoring: Deleted SimulatedSonarQubeServer
-1530536899 | commit 690967d15462c4541b4d34249cae1c0dbcbcafb7 1530536899 ----sp
-Bjoern.Meschede@viadee.de
-Refactoring of application.properties
-1530536279 | commit 2df03e5197ca55c350092adba0ae17a0367157ac 1530536279 ----sp
-Bjoern.Meschede@viadee.de
-Fix: NullPointerException when no user is not authenticated yet
-1530535695 | commit 8ac0ecd1eab72e340aaf8bc1ed3f3c13be54affb 1530535695 ----sp
-Bjoern.Meschede@viadee.de
-Merge branch 'presentation_version'
-1530535093 | commit bb55e8626ea46c881e2acc0d6d1c3f98074c81e3 1530535093 ----sp
-bjoern.meschede@viadee.de
-Fixed issues when updating WorldToUser relation
-1530279687 | commit be9565d9c6b5793f820e4178b28d3c4919db41f6 1530279687 ----sp
-bjoern.meschede@viadee.de
-Fixed SonarQube link issue
-1530278779 | commit 9fc7002c27eeeeec8a4a90721a58d1553e0fc833 1530278779 ----sp
-bjoern.meschede@viadee.de
-Merge remote-tracking branch 'origin/BackendRoleConcept' into presentation_version
-1530273068 | commit cd4e40757c47141e5d1de8158dfc12be37fdf51d 1530273068 ----sp
-bjoern.meschede@viadee.de
-New background images for worlds
-1530261740 | commit 968beaabe7c57a792b9735d49dfb3c3a81876edf 1530261740 ----sp
+***************************************************
+refs/heads/BackendRoleConcept
 christopher.brown@viadee.de
 Role concept in the BackEnd implemented as an example.
 1530192415 | commit c4fadb66d82fab3ae5cda7789a387612b66add48 1530192415 ----sp
+Is NOT Merge
+nullINSERT(14-14,14-15)
+DELETE(23-24,24-24)
+REPLACE(42-47,42-43)
+INSERT(57-57,53-54)
+
 christopher.brown@viadee.de
 BugFix - Whitespace
 1530179025 | commit 02af9129f1a94353e206802b00e9edda66c98202 1530179025 ----sp
+Is NOT Merge
+nullREPLACE(38-39,38-39)
+
 christopher.brown@viadee.de
 RestTemplate updated: Certificates are now ignored. Bugfix in the user world assignment
 1530178242 | commit 559e3cd023f9151b2e4638b9a39c2831f6bfaf74 1530178242 ----sp
+Is NOT Merge
+nullINSERT(48-48,48-54)
+
 christopher.brown@viadee.de
 Roles and permission concept implemented. Outsourced navigation URLs in constants.
 1530041777 | commit 0bb874c37f286a0a7b989e283edbc962d609cc96 1530041777 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-32)
+
 christopher.brown@viadee.de
 Merge branch 'issue90' of https://github.com/viadee/sonarQuest into presentation_version Added optional Http Basic Authorization Possibility of user world mapping implemented.
 1530021915 | commit ae45dcc0b70addddf551e6016a54063f85cbc988 1530021915 ----sp
+Is Merge
+null
 florian.schacht@me.com
 update Worlds on button click, added validation to config-saving
 1529861737 | commit 58508f288ac9a6ff7d868de691cc87b4c3d50df5 1529861737 ----sp
+Is NOT Merge
+nullDELETE(94-96,94-94)
+INSERT(111-111,109-111)
+
 christopher.brown@viadee.de
 User Management - work in progress
 1529861023 | commit 9b58eea5a5aec117c1b8b068c29f4981d1bd5535 1529861023 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-24)
+
 florian.schacht@me.com
 added loadingSpinner
 1529859622 | commit ac818dcec94d01a86c0f2f91ea06a14922150c2e 1529859622 ----sp
+Is NOT Merge
+nullINSERT(79-79,79-81)
+INSERT(132-132,134-135)
+REPLACE(158-159,161-163)
+INSERT(213-213,217-218)
+
 florian.schacht@me.com
 checkSonarQubeUrl works
 1529858160 | commit d26d46cef01d2922d7888890d10241fc0b122290 1529858160 ----sp
+Is NOT Merge
+nullINSERT(30-30,30-36)
+
 florian.schacht@me.com
 implemented external resource loading from sonar config
 1529851573 | commit edcdd8844e1c203f80f60decd9169a90e74a3757 1529851573 ----sp
+Is NOT Merge
+nullREPLACE(6-11,6-8)
+INSERT(18-18,15-17)
+INSERT(90-90,89-90)
+INSERT(97-97,97-103)
+
 florian.schacht@me.com
 moved update standardtasks from world to task tab
 1529769510 | commit 39137c1eb04973a989ee0b5624cccfceb4897973 1529769510 ----sp
+Is NOT Merge
+nullREPLACE(86-93,86-87)
+
 florian.schacht@me.com
 removed updateTasksForWorld from worlds page
 1529766453 | commit c2ea20369f94f9ba5adda7f8e087a33bd7a391e8 1529766453 ----sp
+Is NOT Merge
+nullDELETE(21-28,21-21)
+
 florian.schacht@me.com
 moved worlds to admin page
 1529766179 | commit 476d702c5d6ec2757da746db468857b74436a659 1529766179 ----sp
+Is NOT Merge
+nullREPLACE(28-29,28-29)
+REPLACE(32-33,32-33)
+REPLACE(70-71,70-71)
+REPLACE(96-97,96-97)
+
 florian.schacht@me.com
 in progress
 1529765211 | commit 05ca4f6024d3179988f9d9a12f0003a8ce5737cd 1529765211 ----sp
-Bjoern.Meschede@viadee.de
-SonarQuest info package added
-1529680019 | commit b0388684ec64f98dc702b5c274b501f48daef134 1529680019 ----sp
-bjoern.meschede@viadee.de
-SonarQuest info package
-1529679769 | commit 73e8d1e999f7a748540cf81260734f0add2c61b8 1529679769 ----sp
+Is NOT Merge
+nullINSERT(59-59,59-64)
+
 florian.schacht@me.com
 Merge commit '96119f7371c6bed8e3490018ca1f7c50601f3090' into issue90
 1529664365 | commit 159491ee8172097c0c0c7f834d2e897d9da6608c 1529664365 ----sp
+Is Merge
+nullINSERT(0-0,0-4)
+
 florian.schacht@me.com
 deleted gameInitialiser
 1529664196 | commit ce16bbff4e7dce5557d2feda46f080318af0574b 1529664196 ----sp
-christopher.brown@viadee.de
-.mvn folder added
-1529569597 | commit bcc346ad840190cb3e898788afc4de6c93689eee 1529569597 ----sp
+Is NOT Merge
+nullDELETE(0-128,0-0)
+
 christopher.brown@viadee.de
 .mvn added
 1529569550 | commit bb8160b62920c5f0cb049f1d61ac0ca5e7fc35aa 1529569550 ----sp
+Is NOT Merge
+null
 christopher.brown@viadee.de
 Bugfixes: - The UiDesign can be changed again - Tooltips have been added - Artifacts are loaded when the marketplace is called
 1529495496 | commit 96119f7371c6bed8e3490018ca1f7c50601f3090 1529495496 ----sp
+Is NOT Merge
+nullDELETE(124-131,124-124)
+
 christopher.brown@viadee.de
 The background selection for a world has been moved from the server configuration to the world configuration.
 1529492209 | commit e8b7c6827ec9bf922814492f5dd1ee2a6cd8f3ae 1529492209 ----sp
+Is NOT Merge
+nullREPLACE(70-71,70-71)
+REPLACE(129-130,129-130)
+REPLACE(156-157,156-157)
+
 christopher.brown@viadee.de
 bugs fixed: - quests are now editable again - standardtasks can only be created by the server
 1529490652 | commit 3e0ebccac2a23476b3fbb6aca1638abf9c34abba 1529490652 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-4)
+
 christopher.brown@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1529334512 | commit 310338c7563dc3d2022f2c851d243423b343ebcd 1529334512 ----sp
+Is Merge
+nullINSERT(51-51,51-53)
+
 christopher.brown@viadee.de
 BugFix. Quests could not be loaded.
 1529334506 | commit 3b309d0ee4bccccfbacb0a0dd77449863ee44deb 1529334506 ----sp
+Is NOT Merge
+nullINSERT(26-26,26-27)
+
 christopher.brown@viadee.de
 Update installation.md
 1529333211 | commit e549d9f46d87f002da04ebb7e105addd673fbeb8 1529333211 ----sp
+Is NOT Merge
+nullINSERT(51-51,51-53)
+
 florian.schacht@me.com
 Merge commit 'a953bafe85452e19c27c16695a6e5d3e13d88e3a' into issue51
 1529071490 | commit a78892f610797de448aca3e5c53fab51850e12ab 1529071490 ----sp
+Is Merge
+null
 christopher.brown@viadee.de
 BugFixes
 1529071291 | commit a953bafe85452e19c27c16695a6e5d3e13d88e3a 1529071291 ----sp
+Is NOT Merge
+nullDELETE(2-4,2-2)
+DELETE(7-8,5-5)
+DELETE(18-21,15-15)
+REPLACE(83-93,77-81)
+REPLACE(97-98,85-86)
+REPLACE(99-108,87-90)
+REPLACE(112-113,94-95)
+REPLACE(114-116,96-97)
+REPLACE(119-120,100-101)
+REPLACE(121-123,102-103)
+REPLACE(126-127,106-107)
+REPLACE(128-129,108-109)
+REPLACE(133-134,113-114)
+REPLACE(140-142,120-122)
+REPLACE(164-165,144-145)
+REPLACE(166-167,146-147)
+REPLACE(169-172,149-150)
+REPLACE(183-184,161-162)
+REPLACE(192-193,170-171)
+REPLACE(196-197,174-175)
+REPLACE(204-205,182-183)
+REPLACE(209-210,187-188)
+REPLACE(218-219,196-197)
+REPLACE(233-234,211-212)
+REPLACE(246-247,224-225)
+REPLACE(260-261,238-239)
+REPLACE(262-263,240-241)
+REPLACE(266-267,244-245)
+
 florian.schacht@me.com
 minor fixes
 1529071193 | commit d7bb193506985854f3efe919a275c9e858606153 1529071193 ----sp
+Is NOT Merge
+null
 florian.schacht@me.com
 Merge commit '6875e52d479737545851107d4daef4208c4193d0' into issue51
 1529062248 | commit dc0f4320e64f7f3e3e9f56655138bff30ab87873 1529062248 ----sp
+Is Merge
+nullINSERT(99-99,99-124)
+DELETE(110-111,135-135)
+
 christopher.brown@viadee.de
 Solving minor bugs.
 1528960297 | commit 6875e52d479737545851107d4daef4208c4193d0 1528960297 ----sp
+Is NOT Merge
+nullINSERT(54-54,54-55)
+REPLACE(56-58,57-58)
+REPLACE(60-62,60-62)
+
 christopher.brown@viadee.de
 Game is mostly executable again. Corrections are pending.
 1528920627 | commit 722c74e5cc9624206235191fb1b0e1e885b73b3b 1528920627 ----sp
+Is NOT Merge
+nullINSERT(24-24,24-25)
+REPLACE(144-161,145-153)
+
 christopher.brown@viadee.de
 Game is mostly executable again. Corrections are pending.
 1528907160 | commit 0264ff1125d61bd02aee2addd8ac78503b133e64 1528907160 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-22)
+
 christopher.brown@viadee.de
 Login works. Reloading with F5 still leads to errors. Updating objects still leads to errors.
 1528819270 | commit 39aa255f63bc839acce0c3b98f048a7fcaefdf1d 1528819270 ----sp
+Is NOT Merge
+nullINSERT(112-112,112-126)
+
 florian.schacht@me.com
 fix
 1528817284 | commit 342df9f7c110356f0d0e4224fe562ae19c2c29d8 1528817284 ----sp
+Is NOT Merge
+nullREPLACE(26-29,26-27)
+
 florian.schacht@me.com
 fixes
 1528816923 | commit 61abae051b56947ef4232a498a57cd882cdaf141 1528816923 ----sp
+Is NOT Merge
+nullREPLACE(2-3,2-3)
+REPLACE(5-10,5-6)
+REPLACE(39-40,35-36)
+DELETE(48-53,44-44)
+REPLACE(62-63,53-54)
+DELETE(76-82,67-67)
+
 florian.schacht@me.com
 Merge branch 'master' into issue51
 1528816852 | commit 277edc5ef141c6ee8225308e0e9f22ec96dd22bb 1528816852 ----sp
+Is Merge
+nullREPLACE(40-41,40-41)
+
 florian.schacht@me.com
 solved
 1528816150 | commit f7e9a262ce0bfa9b4db36672f8c56f745b8f3c5a 1528816150 ----sp
+Is NOT Merge
+nullREPLACE(42-43,42-43)
+REPLACE(49-50,49-50)
+REPLACE(67-71,67-71)
+REPLACE(111-112,111-112)
+REPLACE(114-116,114-116)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #89 from viadee/issue87
 1528812695 | commit 7f2f2cf978d18f347c2cf67ed4153bdc76af0275 1528812695 ----sp
+Is Merge
+null
 Sascha.DiBernardo@viadee.de
 #87 Fixed edit developer component
 1528812073 | commit 138c8b1ce8849e39cf1270cf939d01c2c26ccb65 1528812073 ----sp
+Is NOT Merge
+nullREPLACE(75-76,75-77)
+
 christopher.brown@viadee.de
 WiP - Transfer Frontend from Developer to User
 1528473220 | commit cc56a1a5da90b6c12c7a3f1a44003f1486226c89 1528473220 ----sp
+Is NOT Merge
+nullDELETE(10-11,10-10)
+INSERT(12-12,11-12)
+REPLACE(51-52,51-52)
+REPLACE(55-56,55-56)
+REPLACE(59-60,59-60)
+REPLACE(63-64,63-64)
+REPLACE(106-108,106-108)
+
 christopher.brown@viadee.de
 Backend adjustments: Replace developer with user.
 1528462464 | commit 4ec1feea6d4f69da7f077b025d2b3126d09f02ac 1528462464 ----sp
+Is NOT Merge
+nullDELETE(10-11,10-10)
+INSERT(12-12,11-12)
+REPLACE(98-99,98-99)
+REPLACE(106-108,106-108)
+REPLACE(109-111,109-111)
+
 florian.schacht@me.com
 initial
 1528387404 | commit 49ea48e27d7d8d91f9d9b7d6e4df6fbb18f362af 1528387404 ----sp
+Is NOT Merge
+nullINSERT(84-84,84-90)
+REPLACE(90-94,96-101)
+INSERT(95-95,102-109)
+
 boc@viadee.de
 Basic login mechanism implemented.
 1528387183 | commit bf40a153aec103073a2229fd356f255381f2d73f 1528387183 ----sp
+Is NOT Merge
+nullINSERT(5-5,5-7)
+
 boc@viadee.de
 Backend login requirements implemented.
 1528301231 | commit 982f926ae7d6a2dd5e84e2cd8907808d5eb64249 1528301231 ----sp
+Is NOT Merge
+nullREPLACE(27-28,27-28)
+INSERT(48-48,48-52)
+INSERT(55-55,59-64)
+REPLACE(88-93,97-102)
+REPLACE(94-98,103-107)
+REPLACE(99-101,108-110)
+
 mec@viadee.de
 Organize Imports
 1528274865 | commit ae443c467f761fe53699db86e0a7d31ff60ddf1a 1528274865 ----sp
+Is NOT Merge
+nullDELETE(12-13,12-12)
+REPLACE(39-40,38-39)
+REPLACE(42-43,41-42)
+REPLACE(48-49,47-49)
+REPLACE(51-52,51-54)
+REPLACE(54-55,56-58)
+REPLACE(57-58,60-62)
+REPLACE(94-95,98-101)
+REPLACE(108-109,114-116)
+
 mec@viadee.de
 Merge branch 'master' into issue25
 1528273394 | commit a13c671648ebfddda3e61262e260af6211c8def6 1528273394 ----sp
+Is Merge
+nullINSERT(113-113,113-120)
+INSERT(116-116,123-124)
+
 mec@viadee.de
 Merge branch 'issue79'
 1528265183 | commit 6482f4e1130c181ab7dabbeaad7dc359d51f45df 1528265183 ----sp
+Is Merge
+nullREPLACE(5-6,5-6)
+REPLACE(18-21,18-21)
+REPLACE(22-24,22-24)
+REPLACE(109-114,109-114)
+
 Sascha.DB@web.de
 Update README.md
 1528191384 | commit e10320f3346a77f8955ccb7564c743316501f52a 1528191384 ----sp
+Is NOT Merge
+nullREPLACE(40-41,40-41)
+
 Sascha.DiBernardo@viadee.de
 Configured Surefire to use dev profile against Travis
 1528191021 | commit b817eec828ad693e5d19fc808242a92533c65746 1528191021 ----sp
+Is NOT Merge
+nullINSERT(113-113,113-120)
+INSERT(116-116,123-124)
+
 Sascha.DiBernardo@viadee.de
 Added dev + prod profile
 1528188727 | commit 8593d1aea77d0076ba5de751b29da7a7bd363f01 1528188727 ----sp
+Is NOT Merge
+nullDELETE(0-8,0-0)
+
 mec@viadee.de
 German translation changed: replaced "Suchen" with "Quests".
 1528146083 | commit d958e8dfc603995a3350713f67f1f11cbd833525 1528146083 ----sp
+Is NOT Merge
+nullREPLACE(5-6,5-6)
+REPLACE(18-21,18-21)
+REPLACE(22-24,22-24)
+REPLACE(109-114,109-114)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #84 from viadee/issue79
 1528113129 | commit 8a2e45eb4b3015c4776165eafde1f9f6fe30c3c5 1528113129 ----sp
+Is Merge
+null
 mec@viadee.de
 Merge branch 'master' into issue79
 1528112972 | commit 657f50bbf60c6fffd36ed5222fa08b3acf920ed4 1528112972 ----sp
+Is Merge
+nullINSERT(60-60,60-64)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #85 from aabeling/master
 1528045587 | commit d168037abaf27b6551d5d0f675a3d5692f122637 1528045587 ----sp
+Is Merge
+null
 achimabeling@web.de
 Merge branch 'master' of github.com:viadee/sonarQuest
 1528006368 | commit d01d3b4fa1d2360d37b64b0b5fd6f3bfdc241655 1528006368 ----sp
+Is Merge
+nullREPLACE(37-39,37-39)
+REPLACE(40-41,40-41)
+REPLACE(55-56,55-56)
+REPLACE(124-125,124-125)
+REPLACE(145-147,145-147)
+
 Sascha.DiBernardo@viadee.de
 Fixed broken tests (due to file-based db)
 1527869933 | commit faa5dad80e5bf4279cdf99b8babce646605199d1 1527869933 ----sp
+Is NOT Merge
+nullREPLACE(42-43,42-43)
+DELETE(52-54,52-52)
+
 Sascha.DiBernardo@viadee.de
 Removed unnecessary dependency
 1527865395 | commit f334e8335eb9a56468ea9ef111956485475cd79d 1527865395 ----sp
+Is NOT Merge
+nullDELETE(60-65,60-60)
+
 Sascha.DiBernardo@viadee.de
 Added Flyway Config and fixed bug
 1527865299 | commit 1df13a3aec76f315c954623e7e89112950bc9b07 1527865299 ----sp
+Is NOT Merge
+nullREPLACE(119-121,119-123)
+
 Sascha.DiBernardo@viadee.de
 Introducing profiles. Adding more later
 1527859392 | commit b03b344b8a3a4922b4ad40002d95a9e79e35e8a7 1527859392 ----sp
+Is NOT Merge
+nullINSERT(60-60,60-69)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #82 from viadee/issue81
 1527622817 | commit 385ecd21e996db0ae24046c05227575c60756b60 1527622817 ----sp
+Is Merge
+null
 mec@viadee.de
 https://github.com/viadee/sonarQuest/issues/81
 1527622631 | commit 9e5275870f639347f7aecdce5f1656ff7d313747 1527622631 ----sp
+Is NOT Merge
+nullDELETE(0-14,0-0)
+
 achimabeling@web.de
 fixed default language and current language selection; finished translation for 'de'
 1527406629 | commit a264841c727aa7ffe3863a501f413b39c9cacd9c 1527406629 ----sp
+Is NOT Merge
+nullREPLACE(37-39,37-39)
+REPLACE(40-41,40-41)
+REPLACE(55-56,55-56)
+REPLACE(124-125,124-125)
+REPLACE(145-147,145-147)
+
 achimabeling@web.de
 uses browser language as default now
 1527357106 | commit 8e874563c833f2ea26fc400618631ca6713b0371 1527357106 ----sp
+Is NOT Merge
+nullREPLACE(37-39,37-39)
+
 achimabeling@web.de
 added i18n for de
 1527355239 | commit 34e8112740d110fb108680644269b612a2b73e9e 1527355239 ----sp
+Is NOT Merge
+nullREPLACE(37-39,37-39)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #78 from viadee/issue31
 1526995618 | commit 42e2cf370cb699032367cd082bbf3fc1c2f5f9a5 1526995618 ----sp
+Is Merge
+null
 Sascha.DiBernardo@viadee.de
 Show data immediately after saving them
 1526995118 | commit cffe000b33f7ed63315ef5e2fecae8361dd280ad 1526995118 ----sp
+Is NOT Merge
+nullREPLACE(39-40,39-40)
+INSERT(42-42,42-43)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #77 from viadee/issue31
 1526991236 | commit dc08e0ba92ad3052d7bd08782f1a2174a71f3a57 1526991236 ----sp
+Is Merge
+null
 Sascha.DiBernardo@viadee.de
 deserialization against respective class
 1526989265 | commit 88593e208e29667c5fd7f90333566e9a8f1b1c49 1526989265 ----sp
+Is NOT Merge
+nullINSERT(4-4,4-5)
+INSERT(8-8,9-10)
+
 Sascha.DiBernardo@viadee.de
 #31
 1526650317 | commit d5ef999cc94bb8aebbc6df1858494b0dcfc3bad1 1526650317 ----sp
+Is NOT Merge
+nullINSERT(20-20,20-21)
+REPLACE(112-113,113-114)
+INSERT(116-116,117-126)
+
 Sascha.DiBernardo@viadee.de
 Fix for #75
 1526641516 | commit cfa0babc222eb8fcf88240de2938c5c6d1b32b40 1526641516 ----sp
+Is NOT Merge
+nullREPLACE(41-48,41-47)
+REPLACE(57-60,56-58)
+DELETE(74-75,72-72)
+REPLACE(89-92,86-87)
+DELETE(93-95,88-88)
+
 nico.buescher@viadee.de
 Merge branch 'issue72'
 1526549462 | commit d2fdfab0166f7e813a86bae8ec671ac0784082cd 1526549462 ----sp
+Is Merge
+nullDELETE(2-14,2-2)
+INSERT(22-22,10-31)
+INSERT(27-27,36-38)
+REPLACE(28-29,39-40)
+REPLACE(30-31,41-42)
+REPLACE(34-35,45-47)
+REPLACE(47-48,59-61)
+REPLACE(58-59,71-72)
+REPLACE(61-62,74-75)
+DELETE(66-67,79-79)
+REPLACE(77-78,89-90)
+REPLACE(79-82,91-92)
+REPLACE(91-96,101-105)
+REPLACE(97-98,106-109)
+DELETE(100-101,111-111)
+REPLACE(104-105,114-115)
+REPLACE(110-112,120-122)
+REPLACE(116-117,126-128)
+REPLACE(119-121,130-132)
+REPLACE(123-133,134-145)
+REPLACE(134-135,146-147)
+REPLACE(137-138,149-150)
+REPLACE(141-142,153-154)
+REPLACE(143-144,155-156)
+
 nico.buescher@viadee.de
 You can switch between Designs
 1526549429 | commit a5ac638ed232c46303fc08085dd4b463b855eaa5 1526549429 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-57)
+
 mec@viadee.de
 Exception-Handling
 1526299805 | commit 30f7cc010c7681ff735e3b834d0fd1159d9aa6e3 1526299805 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-13)
+
 mec@viadee.de
 Small cleanup
 1526036614 | commit 03d76e4cfffb06aae1dbc0ea8a7c0a82828b5d02 1526036614 ----sp
+Is NOT Merge
+nullDELETE(2-14,2-2)
+INSERT(22-22,10-31)
+INSERT(27-27,36-38)
+REPLACE(28-29,39-40)
+REPLACE(30-31,41-42)
+REPLACE(34-35,45-47)
+REPLACE(47-48,59-61)
+REPLACE(58-59,71-72)
+REPLACE(61-62,74-75)
+DELETE(66-67,79-79)
+REPLACE(77-78,89-90)
+REPLACE(79-82,91-92)
+REPLACE(91-96,101-105)
+REPLACE(97-98,106-109)
+DELETE(100-101,111-111)
+REPLACE(104-105,114-115)
+REPLACE(110-112,120-122)
+REPLACE(116-117,126-128)
+REPLACE(119-121,130-132)
+REPLACE(123-133,134-145)
+REPLACE(134-135,146-147)
+REPLACE(137-138,149-150)
+REPLACE(141-142,153-154)
+REPLACE(143-144,155-156)
+
 mec@viadee.de
 Small cleanup
 1526036128 | commit 16540a68ed9e1c2626ac6169c0b88415720647ac 1526036128 ----sp
+Is NOT Merge
+nullREPLACE(37-38,37-38)
+REPLACE(72-73,72-73)
+
 mec@viadee.de
 Assignment without function removed
 1526036090 | commit 15331bb55079ca8174093a0e413aca2735e32d7f 1526036090 ----sp
+Is NOT Merge
+nullREPLACE(0-162,0-152)
+
 mec@viadee.de
 Bugfix developer assignment
 1526036011 | commit 1879c61329d7eb69f0fa25e2cefa3260fdfeffc2 1526036011 ----sp
+Is NOT Merge
+nullREPLACE(0-84,0-90)
+
 mec@viadee.de
 Small cleanup
 1526035857 | commit eabd0a79aa163a992a57916f860063ad5fb994fa 1526035857 ----sp
+Is NOT Merge
+nullDELETE(19-20,19-19)
+REPLACE(31-32,30-31)
+REPLACE(34-35,33-34)
+REPLACE(37-38,36-37)
+REPLACE(40-41,39-40)
+REPLACE(44-45,43-44)
+REPLACE(47-48,46-47)
+REPLACE(65-66,64-66)
+REPLACE(142-153,142-147)
+
 mec@viadee.de
 Merge branch 'issue60'
 1525878379 | commit 03e13ba444183cb8334ffd786b6c579f8b9f6905 1525878379 ----sp
+Is Merge
+nullINSERT(6-6,6-7)
+INSERT(80-80,81-83)
+REPLACE(82-83,85-86)
+INSERT(85-85,88-89)
+REPLACE(93-94,97-98)
+INSERT(95-95,99-100)
+REPLACE(102-103,107-108)
+REPLACE(121-122,126-127)
+REPLACE(123-125,128-130)
+
 nico.buescher@viadee.de
 Choose an Background for each World
 1525875522 | commit 2d6349676e586bf0edf4472c0bf545509ecb2e00 1525875522 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-1)
+REPLACE(28-29,29-31)
+INSERT(40-40,42-46)
+
 nico.buescher@viadee.de
 Proof of concept
 1525874045 | commit 0104c0d3ac08da5cea37e8a7d3cba9d13c5ff6e4 1525874045 ----sp
+Is NOT Merge
+nullREPLACE(65-66,65-66)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #65 from viadee/issue64
 1525784313 | commit 3b2d94e108f153f168ab22400cb9aed450839bd0 1525784313 ----sp
+Is Merge
+null
 nico.buescher@viadee.de
 fix the test
 1525779687 | commit f78bd29dc6a5a42c9714f36084d9b07eac3aa1cc 1525779687 ----sp
+Is NOT Merge
+nullINSERT(6-6,6-7)
+INSERT(80-80,81-83)
+REPLACE(82-83,85-86)
+INSERT(85-85,88-89)
+REPLACE(93-94,97-98)
+INSERT(95-95,99-100)
+REPLACE(102-103,107-108)
+REPLACE(121-122,126-127)
+REPLACE(123-125,128-130)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1525773873 | commit ddb16f279819d25be2eb601f13552bf5c178ff8c 1525773873 ----sp
+Is Merge
+null
 nico.buescher@viadee.de
 entity world got a image attribute
 1525773859 | commit 20b8b9a5367ef820a4f1a57a7d19abef9e9f793d 1525773859 ----sp
+Is NOT Merge
+nullINSERT(61-61,61-73)
+
 mec@viadee.de
 Merge branch 'banner'
 1525762264 | commit 4452a6308f094d3f3ca1c67b44396ac456addec4 1525762264 ----sp
+Is Merge
+nullREPLACE(136-137,136-137)
+
 nico.buescher@viadee.de
 UI: White areas in transparent and as background a picture #59
 1525700426 | commit acf127876289ad32e744bfa8492a147f91853717 1525700426 ----sp
+Is NOT Merge
+nullREPLACE(2-6,2-6)
+REPLACE(7-8,7-8)
+REPLACE(10-13,10-13)
+REPLACE(16-17,16-17)
+REPLACE(22-62,22-69)
+REPLACE(63-73,70-73)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1525686782 | commit be0c7995d2ceaf381cf1b1798e0917bf3ad04602 1525686782 ----sp
-nico.buescher@viadee.de
-Send image to backend #45
-1525686729 | commit db0a2ad0c2c315b04b75df1cf7b9ad3cb4c0e2a0 1525686729 ----sp
+Is Merge
+nullREPLACE(136-137,136-137)
+
 chrishan.perera@logmein.com
 Dockerize SQuest backend and frontend
 1525017505 | commit 3bdbe6b9b373a4a650a2bee2d91beb76e2665844 1525017505 ----sp
+Is NOT Merge
+nullREPLACE(2-3,2-3)
+
 mec@viadee.de
 Current developer changed to the witch
 1524749618 | commit 5063984df55ad5160435dad70a0eff9faf9bdafd 1524749618 ----sp
+Is NOT Merge
+nullREPLACE(27-28,27-28)
+
 mec@viadee.de
 broken testdata fixed
 1524748886 | commit b81217b59746f9101f770b1ad95f10d81bda6de2 1524748886 ----sp
+Is NOT Merge
+nullREPLACE(47-48,47-48)
+
 mec@viadee.de
 New developer added
 1524743496 | commit 71d966e8512621f4c0322045ed7f931ff14475ee 1524743496 ----sp
+Is NOT Merge
+nullREPLACE(9-10,9-11)
+INSERT(46-46,47-48)
+
 mec@viadee.de
 PROD_ENDPOINT changed
 1524743395 | commit 2a7d3c5ef5f6dd9c24bd1030bec28826ccfb7b3d 1524743395 ----sp
+Is NOT Merge
+nullREPLACE(4-5,4-5)
+REPLACE(6-7,6-7)
+
 mec@viadee.de
 JAX conference avatar witch added
 1524739810 | commit 5c6a86ebdfc326b4821e4f9b367a04b2f4bcb7c1 1524739810 ----sp
+Is NOT Merge
+null
 nico.buescher@viadee.de
 Add a banner to the frontend
 1524739686 | commit e1698d54ed7c7b17b87070a1e72e7e4a8ea2317d 1524739686 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-3)
+REPLACE(6-17,9-20)
+REPLACE(38-39,41-42)
+REPLACE(44-45,47-48)
+INSERT(56-56,59-61)
+INSERT(70-70,75-77)
+REPLACE(72-73,79-80)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #50 from dcustic/master
 1524733485 | commit a83d8c2a7e37512e5906b8cf714b58a78141dffa 1524733485 ----sp
+Is Merge
+null
 dino.custic@outletcity.com
 - Code cleanup 1st iteration - Removed all redundant this qualifiers - Changed iterator loops to foreach - Removed redundant initialisations - Changed rendundant type declarations for collections with diamonds <> - StandardTaskService: Changed (altho not a bug in this case) a == string compare with Objects.equals (also the rest of the class Strings were compared with Objects.equals) - Changed simple lambdas to method references - Removed rendundant return statements in void methods - Removed some redundant local variables
 1524731918 | commit 0a3520b73e801305360c8667ba678dae3229dcc8 1524731918 ----sp
+Is NOT Merge
+nullREPLACE(49-50,49-50)
+REPLACE(55-56,55-56)
+REPLACE(60-61,60-61)
+REPLACE(70-71,70-71)
+REPLACE(78-79,78-79)
+REPLACE(87-88,87-88)
+REPLACE(93-94,93-94)
+REPLACE(99-100,99-100)
+REPLACE(106-107,106-107)
+REPLACE(108-109,108-109)
+REPLACE(114-115,114-115)
+REPLACE(126-127,126-127)
+REPLACE(128-129,128-129)
+REPLACE(130-131,130-131)
+REPLACE(133-134,133-134)
+REPLACE(135-136,135-136)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1524731592 | commit 02a723ec02c36f5e87c9c24554088c28aa8cb954 1524731592 ----sp
+Is Merge
+nullREPLACE(138-139,138-139)
+
 frank.koehne@viadee.de
 Merge pull request #49 from viadee/basic-backend-logging
 1524676478 | commit 396c0cb5ed6119ac29b3fa708d0bdcad92df7bdc 1524676478 ----sp
+Is Merge
+null
 frank.koehne@viadee.de
 Dropped spring repo reference, ignore logfiles.
 1524676182 | commit 85dec983cd6d333b79833e130a60cd09e6429ffe 1524676182 ----sp
+Is NOT Merge
+nullINSERT(62-62,62-63)
+
 frank.koehne@viadee.de
 Logging-configuration via logback including flatfile, json and console outputs including spring sleuth request ids.
 1524644436 | commit b648315a37e63a0136675400f3fad87c8151f667 1524644436 ----sp
+Is NOT Merge
+nullREPLACE(84-86,84-97)
+REPLACE(100-101,111-122)
+
 mec@viadee.de
 Data with active avatar adjusted
 1524601526 | commit bc115fa2532697b2b77b18a4edc785a741dedb72 1524601526 ----sp
+Is NOT Merge
+nullREPLACE(44-47,44-47)
+
 mec@viadee.de
 SQ Hero banner
 1524601093 | commit df488c2b1252c7fe5902c7f59cf13ab9c1129937 1524601093 ----sp
+Is NOT Merge
+null
 mec@viadee.de
 JAX conference avatars added and others removed
 1524597601 | commit 8e4246d561a93b0b6c7aaecd85ceb77c31a5d150 1524597601 ----sp
+Is NOT Merge
+null
 nico.buescher@viadee.de
 Bugfix #45
 1524561471 | commit d1cef6d615fdd2f141a3760dcc0a3a65ce92e816 1524561471 ----sp
+Is NOT Merge
+nullREPLACE(138-139,138-139)
+
 nico.buescher@viadee.de
 Load and display images from the backend #45
 1524493486 | commit 0a3c49cb100e89ed2d120b8abddd13a4207cf4d5 1524493486 ----sp
+Is NOT Merge
+null
 nico.buescher@viadee.de
 proof of concept #45
 1524483798 | commit c3601dfb3fa1409a51304958fdfb9b481d5fa192 1524483798 ----sp
+Is NOT Merge
+nullINSERT(2-2,2-3)
+REPLACE(12-13,13-15)
+INSERT(16-16,18-20)
+INSERT(108-108,112-120)
+
 mec@viadee.de
 IT fixed
 1524469198 | commit 7b848dd3f8b4d2e6eaccfca3c2575c1460f52052 1524469198 ----sp
+Is NOT Merge
+nullREPLACE(85-86,85-86)
+REPLACE(95-96,95-96)
+REPLACE(115-116,115-117)
+REPLACE(120-121,121-122)
+REPLACE(123-124,124-125)
+
 bjoern.meschede@viadee.de
 Added issues from public Apache Commons Lang3 sonarcloud build
 1524457165 | commit c69da386cd3c81f5ec45e8ca5e53b9311a7079f5 1524457165 ----sp
+Is NOT Merge
+nullREPLACE(52-53,52-53)
+
 bjoern.meschede@viadee.de
 Added gitignore-entry for Eclipse metadata
 1524456994 | commit edd191cb1bf3d21340bbb84cc5c2ac6ccf350802 1524456994 ----sp
+Is NOT Merge
+nullINSERT(78-78,78-79)
+
 bjoern.meschede@viadee.de
 Merge branch 'Issue33'
 1524435074 | commit a682fceab66e29d9dcb94b3448b63d638a2ce27b 1524435074 ----sp
+Is Merge
+null
 bjoern.meschede@viadee.de
 Fix for issueKey in Tasks
 1524435012 | commit 4f2f100465348be0101adfb03702365b595d841a 1524435012 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-69)
+
 boc@viadee.de
 Issue 33 - Tasks are now linked to SonarQube issues
 1524236534 | commit 0d8c3ac1111cb45aaef9f3fc16ba46beae2367f9 1524236534 ----sp
+Is NOT Merge
+nullINSERT(75-75,75-77)
+
 Bjoern.Meschede@viadee.de
 new Screenshot for ReadMe
 1524230732 | commit f608bbde01b3d60a92cf0ec9d051e3cbdbb8e9fa 1524230732 ----sp
+Is NOT Merge
+null
 Sascha.DiBernardo@viadee.de
 fixed #34
 1524227242 | commit 78c2d11e02673698292b2c1bc9541b8dec7fb0b4 1524227242 ----sp
+Is NOT Merge
+nullREPLACE(28-29,28-29)
+REPLACE(68-69,68-69)
+INSERT(173-173,173-174)
+
 nico.buescher@viadee.de
 design update
 1524065679 | commit 1d9cb3b1e2be82e1a732935d07d24ecb04fa5abc 1524065679 ----sp
+Is NOT Merge
+nullREPLACE(12-13,12-13)
+REPLACE(19-20,19-20)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1524054210 | commit 2701be73f09757519905055314e01d9cca2fdaa3 1524054210 ----sp
+Is Merge
+nullREPLACE(40-41,40-41)
+REPLACE(187-189,187-190)
+
 nico.buescher@viadee.de
 bugfix
 1524054197 | commit 11b0344f68cc977cdf733636f333cdcfcd337634 1524054197 ----sp
+Is NOT Merge
+nullREPLACE(47-48,47-48)
+
 mec@viadee.de
 World of dangers in simulated data removed
 1524052502 | commit 74a7d7da54dfabe29ed3307857848ab5eb41eda0 1524052502 ----sp
+Is NOT Merge
+nullREPLACE(40-41,40-41)
+REPLACE(187-189,187-190)
+
 nico.buescher@viadee.de
 Design update for 'choose World'-popup
 1524050328 | commit f6644d07f4d8cb7f2d9504561f2b8b1533c1cc67 1524050328 ----sp
+Is NOT Merge
+nullREPLACE(50-51,50-51)
+
 nico.buescher@viadee.de
 Design update for MyAvatar
 1524050037 | commit f86c73c5e89e61ed1ef1e8cb6cc5e88c479dbc58 1524050037 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-1)
+INSERT(1-1,2-3)
+REPLACE(16-23,18-28)
+INSERT(28-28,33-34)
+
 nico.buescher@viadee.de
 Merge branch 'updateBranch'
 1524049460 | commit 595251c856683352c754fb4c8bf15fd41a31f42b 1524049460 ----sp
+Is Merge
+nullDELETE(2-5,2-2)
+INSERT(7-7,4-17)
+REPLACE(23-24,33-34)
+REPLACE(29-30,39-40)
+REPLACE(31-32,41-42)
+REPLACE(53-56,63-66)
+REPLACE(60-64,70-74)
+REPLACE(67-68,77-79)
+DELETE(75-76,86-86)
+REPLACE(77-89,87-99)
+REPLACE(90-91,100-101)
+REPLACE(147-150,157-160)
+REPLACE(151-154,161-164)
+REPLACE(155-158,165-168)
+REPLACE(159-180,169-172)
+INSERT(181-181,173-181)
+REPLACE(182-183,182-211)
+
 nico.buescher@viadee.de
 Design update and better workflow
 1524049409 | commit a0e3535e64bdb91c64f47c6c5da78dc9b0cd2407 1524049409 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-1)
+INSERT(1-1,2-4)
+INSERT(2-2,5-6)
+INSERT(15-15,19-20)
+
 nico.buescher@viadee.de
 Bugfix
 1523969828 | commit d1ae0ee442fe555b7adb4d2f10544b206b256f6d 1523969828 ----sp
+Is NOT Merge
+nullREPLACE(68-70,68-69)
+
 nico.buescher@viadee.de
 update style 0.1
 1523968832 | commit 51e4ce6654590ce3853c2efe13923794c45142f3 1523968832 ----sp
+Is NOT Merge
+nullDELETE(0-2,0-0)
+REPLACE(3-4,1-2)
+DELETE(5-6,3-3)
+REPLACE(7-18,4-16)
+
 mec@viadee.de
 Resized background images with bugs for better quality
 1523967525 | commit b445163d6ba69d3dec4b0fdc12963d799c6ca47d 1523967525 ----sp
+Is NOT Merge
+nullREPLACE(4-5,4-5)
+
 florian.schacht@me.com
 adding images finished
 1523958389 | commit f3dd517202e0daed62b5aaff6745ce3cd9ee2233 1523958389 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-13)
+
 florian.schacht@me.com
 page images in progress
 1523956796 | commit f5e0b83cd8b53f2ef1fa659d51fd950fa8933e11 1523956796 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-13)
+
 florian.schacht@me.com
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1523949862 | commit 58e4116e7d3167d29f7bcb20eed39f66432289f8 1523949862 ----sp
+Is Merge
+nullREPLACE(4-5,4-5)
+INSERT(6-6,6-7)
+INSERT(22-22,23-26)
+INSERT(28-28,32-37)
+INSERT(48-48,57-70)
+REPLACE(50-52,72-73)
+
 florian.schacht@me.com
 added splashscreen
 1523949129 | commit 1363aaaecdf306c513f624c3e6597230bd49f576 1523949129 ----sp
+Is NOT Merge
+nullREPLACE(21-22,21-22)
+
 mec@viadee.de
 Bugfix hashcode/equals
 1523906224 | commit 1687657ab4b00bf83b2646bceeee730a74cd78c8 1523906224 ----sp
+Is NOT Merge
+nullDELETE(2-5,2-2)
+INSERT(7-7,4-17)
+REPLACE(23-24,33-34)
+REPLACE(29-30,39-40)
+REPLACE(31-32,41-42)
+REPLACE(53-56,63-66)
+REPLACE(60-64,70-74)
+REPLACE(67-68,77-79)
+DELETE(75-76,86-86)
+REPLACE(77-89,87-99)
+REPLACE(90-91,100-101)
+REPLACE(147-150,157-160)
+REPLACE(151-154,161-164)
+REPLACE(155-158,165-168)
+REPLACE(159-180,169-172)
+INSERT(181-181,173-181)
+REPLACE(182-183,182-211)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1523878689 | commit 4f81446f5843cd5970df481df09627e8a26136d9 1523878689 ----sp
+Is Merge
+nullINSERT(6-6,6-8)
+INSERT(11-11,13-14)
+INSERT(13-13,16-17)
+REPLACE(17-22,21-35)
+REPLACE(24-28,37-48)
+
 nico.buescher@viadee.de
 Marketplace for Player and Gamemaster #1 & #2
 1523878682 | commit 5de510ca2dbc3c8e133d24280b9c7b06a60ec18c 1523878682 ----sp
+Is NOT Merge
+nullREPLACE(4-5,4-5)
+INSERT(6-6,6-7)
+INSERT(22-22,23-26)
+INSERT(28-28,32-37)
+INSERT(48-48,57-70)
+REPLACE(50-52,72-73)
+
 37378879+h-huss@users.noreply.github.com
 Fixes #5 - Error message on missing sonar.
 1523348922 | commit a33fd4f07e8e62e9db6213e3e6eb2794fe4ac9ff 1523348922 ----sp
+Is NOT Merge
+nullINSERT(6-6,6-8)
+INSERT(11-11,13-14)
+INSERT(13-13,16-17)
+REPLACE(17-22,21-35)
+REPLACE(24-28,37-48)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1523279551 | commit dde16280f85709d62f1e134ab3b5e90557d072cd 1523279551 ----sp
+Is Merge
+nullINSERT(0-0,0-201)
+
 nico.buescher@viadee.de
 Basic Functions: Marketplace for gamemasters #2
 1523279057 | commit c96e75f5d52f7ffe7a91a6259eb3f8a70b1e46db 1523279057 ----sp
+Is NOT Merge
+nullINSERT(6-6,6-8)
+DELETE(11-12,13-13)
+DELETE(17-19,18-18)
+REPLACE(20-23,19-23)
+REPLACE(26-27,26-27)
+INSERT(29-29,29-30)
+REPLACE(31-37,32-33)
+INSERT(39-39,35-36)
+REPLACE(42-45,39-40)
+INSERT(47-47,42-43)
+REPLACE(49-59,45-46)
+INSERT(68-68,55-57)
+REPLACE(69-76,58-59)
+
 mec@viadee.de
 Artefacts with new icons and testdata modified
 1523121757 | commit e5bfba6b70f2ea3d3f3a2da28967831af9481f00 1523121757 ----sp
+Is NOT Merge
+nullREPLACE(32-33,32-33)
+REPLACE(34-36,34-36)
+INSERT(49-49,49-51)
+
 mec@viadee.de
 https://github.com/viadee/sonarQuest/issues/26 more translation issues fixed
 1523045527 | commit aaa39cd91dffde01901bbd589a333e5aaf54441c 1523045527 ----sp
+Is NOT Merge
+nullREPLACE(5-6,5-6)
+REPLACE(10-11,10-11)
+REPLACE(15-16,15-16)
+REPLACE(20-21,20-21)
+REPLACE(27-28,27-28)
+
 35367476+Christoph-Meyer@users.noreply.github.com
 Merge pull request #30 from viadee/Issue24Dev
 1523002516 | commit 006fc3a7bbd80ef2f51649d9e4577de006012eda 1523002516 ----sp
+Is Merge
+nullINSERT(62-62,62-63)
+REPLACE(107-108,108-110)
+REPLACE(126-127,128-130)
+
 37378879+h-huss@users.noreply.github.com
 Inline unneeded temporary variables
 1523000100 | commit bd0f300c92ecf435dd85918fddfd75083c2592f4 1523000100 ----sp
+Is NOT Merge
+nullREPLACE(36-38,36-37)
+
 tamara.gunkel@viadee.de
 Fixes reloading avatar page after editing
 1522999494 | commit 4ea728650ec1ee9e6f3a5ef08ea891f62c58612b 1522999494 ----sp
+Is NOT Merge
+nullREPLACE(0-3,0-3)
+REPLACE(15-21,15-19)
+REPLACE(27-30,25-28)
+REPLACE(33-34,31-32)
+
 tamara.gunkel@viadee.de
 Fixed test by adapting test data to new simulated data
 1522997776 | commit 4380467743deb42ad2838c95d6b8d937ba025663 1522997776 ----sp
+Is NOT Merge
+nullREPLACE(87-88,87-88)
+REPLACE(97-98,97-98)
+REPLACE(120-122,120-122)
+REPLACE(123-124,123-124)
+REPLACE(125-126,125-126)
+
 mec@viadee.de
 https://github.com/viadee/sonarQuest/issues/26 translation issues fixed
 1522951904 | commit ff27d74fa3dbb9084b2f37d378a6defde9f5f4ed 1522951904 ----sp
+Is NOT Merge
+nullREPLACE(27-28,27-28)
+REPLACE(30-31,30-31)
+REPLACE(60-61,60-61)
+REPLACE(68-71,68-69)
+
 mec@viadee.de
 https://github.com/viadee/sonarQuest/issues/26
 1522945506 | commit 3acdb424d98a6552239b57f559b47085b25194bc 1522945506 ----sp
+Is NOT Merge
+nullREPLACE(41-42,41-42)
+
 mec@viadee.de
 https://github.com/viadee/sonarQuest/issues/14 testdata expanded
 1522944365 | commit ae9820d03d8b3b5377ae8ed220abfd299a6487f4 1522944365 ----sp
+Is NOT Merge
+nullREPLACE(5-7,5-10)
+REPLACE(9-11,12-16)
+REPLACE(13-17,18-23)
+REPLACE(20-21,26-30)
+REPLACE(23-25,32-36)
+REPLACE(28-29,39-41)
+REPLACE(31-34,43-46)
+REPLACE(36-39,48-51)
+
 tamara.gunkel@viadee.de
 fixed test by modifying name of world
 1522927592 | commit 7e75c3da701c0a686d0d170d9e2da51ecf4ba706 1522927592 ----sp
+Is NOT Merge
+nullREPLACE(69-70,69-70)
+
 tamara.gunkel@viadee.de
 modified world names
 1522922137 | commit 27f2c4909cc6e644b29ae5ca174dfd8be3754bb9 1522922137 ----sp
+Is NOT Merge
+nullREPLACE(186-187,186-188)
+
 tamara.gunkel@viadee.de
 added avatar edit functionality
 1522842529 | commit 5ce0de3b031fc7ffdc96f6b4642b5134f65d4d4d 1522842529 ----sp
+Is NOT Merge
+nullINSERT(62-62,62-63)
+REPLACE(107-108,108-110)
+REPLACE(126-127,128-130)
+
 MeC@NBWXW484.intern.viadee.de
 The Rat World - Simulationsdata
 1522832047 | commit 2f4ca49298b4492d8ef786113eb9104eb3a944b3 1522832047 ----sp
+Is NOT Merge
+nullINSERT(2-2,2-6)
+DELETE(12-15,16-16)
+INSERT(17-17,18-19)
+DELETE(35-36,37-37)
+REPLACE(41-46,42-51)
+REPLACE(51-55,56-60)
+REPLACE(56-61,61-66)
+REPLACE(62-66,67-71)
+REPLACE(67-71,72-76)
+REPLACE(72-76,77-81)
+REPLACE(77-79,82-85)
+REPLACE(80-81,86-88)
+REPLACE(82-83,89-91)
+REPLACE(85-89,93-97)
+REPLACE(90-92,98-100)
+REPLACE(93-96,101-104)
+INSERT(97-97,105-108)
+REPLACE(98-99,109-187)
+REPLACE(105-106,193-194)
+REPLACE(108-110,196-198)
+
 tamara.gunkel@viadee.de
 added edit button
 1522747982 | commit 7f0d5c6fd493daf36130b8d49d084246192e614b 1522747982 ----sp
+Is NOT Merge
+nullDELETE(33-34,33-33)
+REPLACE(35-36,34-35)
+INSERT(40-40,39-46)
+
 tamara.gunkel@viadee.de
 extended Test and seperated data initialisation from main method
 1522745014 | commit 1d010f905d05a8984d06a197c0e3ac65dbd04109 1522745014 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-112)
+
 frank.koehne@viadee.de
 Updating adventures is costly and possibly makes multiple writes - it needs to be synchronized and transaction safe.
 1522518770 | commit 066ba503c02bdb0f8a484978fabcd493f5edcc06 1522518770 ----sp
+Is NOT Merge
+nullINSERT(2-2,2-9)
+DELETE(11-16,18-18)
+REPLACE(22-23,24-25)
+REPLACE(24-25,26-27)
+REPLACE(33-34,35-36)
+REPLACE(37-38,39-41)
+REPLACE(39-41,42-44)
+REPLACE(48-51,51-54)
+REPLACE(52-54,55-57)
+REPLACE(59-60,62-63)
+REPLACE(61-63,64-66)
+REPLACE(65-67,68-70)
+REPLACE(69-70,72-73)
+REPLACE(75-76,78-79)
+REPLACE(77-78,80-81)
+REPLACE(81-82,84-85)
+REPLACE(89-92,92-95)
+REPLACE(93-94,96-97)
+REPLACE(98-99,101-102)
+REPLACE(100-101,103-104)
+REPLACE(102-103,105-106)
+REPLACE(104-105,107-108)
+REPLACE(112-115,115-118)
+REPLACE(116-117,119-120)
+REPLACE(121-122,124-125)
+REPLACE(123-124,126-127)
+REPLACE(125-126,128-129)
+REPLACE(127-132,130-135)
+
 frank.koehne@viadee.de
 Fix: Adding developers to Aadventures was not thread-safe on the domain model level
 1522517950 | commit 55cb208dacdae98c87d6c5fdf415b599a3f39d30 1522517950 ----sp
+Is NOT Merge
+nullREPLACE(141-142,141-142)
+REPLACE(143-144,143-144)
+
 frank.koehne@viadee.de
 Removed all remains of manual logging config.
 1522517512 | commit 8bc8508a1b37ab2ee8c3749d42ebe77c97dfc37c 1522517512 ----sp
+Is NOT Merge
+nullINSERT(2-2,2-6)
+DELETE(6-11,10-10)
+REPLACE(137-138,136-137)
+REPLACE(139-140,138-139)
+REPLACE(141-142,140-141)
+
 frank.koehne@viadee.de
 Integration test methods are now timed for regression.
 1522517217 | commit c55be69c4feaa0aac52ad70fe32a3e235242f4b2 1522517217 ----sp
+Is NOT Merge
+nullREPLACE(45-46,45-46)
+REPLACE(55-57,55-58)
+REPLACE(58-60,59-62)
+DELETE(82-83,84-84)
+
 Frank.Koehne@viadee.de
 Reestablished the integration test for the new test data.
 1522502483 | commit b3a9df5e776b4e89839f495abbf159d623f6ddea 1522502483 ----sp
+Is NOT Merge
+nullREPLACE(8-9,8-9)
+REPLACE(11-12,11-12)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1522325454 | commit 1dd237fd9b8b7ae2803f966832d722712e0afb52 1522325454 ----sp
+Is Merge
+nullINSERT(0-0,0-2)
+
 nico.buescher@viadee.de
 merge
 1522325367 | commit fb9075993e88ade1773d801bc507675d1562322c 1522325367 ----sp
+Is Merge
+nullINSERT(17-17,17-21)
+REPLACE(56-60,60-64)
+INSERT(115-115,119-130)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1522322265 | commit aef75e8316201a5abe73fa7484e56e80e73207c6 1522322265 ----sp
+Is Merge
+nullINSERT(0-0,0-2)
+
 nico.buescher@viadee.de
 The CurrentWorld is always the first object of Worlds of the list that comes from the server. It should be saved in which world the user was last found. #20
 1522322250 | commit 2e63272672892790a56a01fef21a78a1a7547e8a 1522322250 ----sp
+Is NOT Merge
+nullINSERT(6-6,6-7)
+INSERT(8-8,9-10)
+INSERT(48-48,50-52)
+INSERT(106-106,110-114)
+
 37378879+h-huss@users.noreply.github.com
 Use @SpringBootTest(properties = "simulateSonarServer=true") for UserManagementIT
 1522135362 | commit 32e06a06b69ae139110c6f0fd79d99571302580a 1522135362 ----sp
+Is NOT Merge
+nullREPLACE(19-20,19-20)
+
 tamara.gunkel@viadee.de
 Fixes #9 you can choose the same avatar pictures as for the quests
 1522074838 | commit c7c11f4c24e581dc7f1629f524befb547d8b7d1f 1522074838 ----sp
+Is NOT Merge
+nullREPLACE(56-60,56-60)
+
 tamara.nrw@web.de
 Build project from backend directory
 1522073445 | commit 9b7524247ab3f5feb9936d6c2612e24ef199c539 1522073445 ----sp
+Is NOT Merge
+nullINSERT(1-1,1-2)
+
 tamara.gunkel@viadee.de
 Fixes #7 choose image for quest
 1522056493 | commit 75c78c14a1e6926190d419f7757461d16a51dcc6 1522056493 ----sp
+Is NOT Merge
+nullREPLACE(2-3,2-3)
+INSERT(28-28,28-38)
+
 tamara.nrw@web.de
 Added Travis CI Build Status
 1522050557 | commit c1b90fd2c97f2905e74d538fb8cb3dcd9bf9c127 1522050557 ----sp
+Is NOT Merge
+nullINSERT(2-2,2-4)
+
 tamara.gunkel@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1522047667 | commit 87095009c0f03984085db5e880b31d37ffe6cad7 1522047667 ----sp
+Is Merge
+nullINSERT(0-0,0-1)
+
 tamara.gunkel@viadee.de
 Fixes #16 progess bar shows correct value
 1522047643 | commit 4f551a27586ad9261bc9e29018ef7f1a769498c7 1522047643 ----sp
+Is NOT Merge
+nullREPLACE(28-29,28-29)
+REPLACE(30-31,30-31)
+
 frank.koehne@viadee.de
 Create travis-file (CI-base config)
 1521818716 | commit ade3b173b31b0515c54792bcc38f0c0e76179959 1521818716 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-1)
+
 tamara.gunkel@viadee.de
 added basic image handling
 1521805742 | commit c0e2971a4b954db6b17d97f3c051caa4f66f00b1 1521805742 ----sp
+Is NOT Merge
+nullREPLACE(56-60,56-60)
+
 tamara.nrw@web.de
 Use fitting icons
 1521805460 | commit f6eb03ce26bc62923ff7842aa9a92cff2ecc925a 1521805460 ----sp
+Is NOT Merge
+nullREPLACE(23-25,23-25)
+
 tamara.gunkel@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1521801231 | commit 430c39dba3a15730c89901be9f3f2d97cd0af947 1521801231 ----sp
+Is Merge
+nullDELETE(9-20,9-9)
+DELETE(54-75,43-43)
+REPLACE(81-83,49-52)
+REPLACE(94-95,63-64)
+
 tamara.gunkel@viadee.de
 added global Cors configuration
 1521799733 | commit 75fe60945e8b014d15caa505744f88cedf1f6ca8 1521799733 ----sp
+Is NOT Merge
+nullINSERT(15-15,15-19)
+INSERT(107-107,111-122)
+
 tamara.nrw@web.de
 Update installation.md
 1521797409 | commit 46bdd2599d74b7c2a2d3738eb9d167a9bbae4741 1521797409 ----sp
+Is NOT Merge
+nullREPLACE(49-50,49-50)
+
 37378879+h-huss@users.noreply.github.com
 Adapt the installation file for removal of the simulationServer
 1521796945 | commit 0ed12891ebc4ce43dd7422f1f004424dfb672c14 1521796945 ----sp
+Is NOT Merge
+nullDELETE(9-20,9-9)
+DELETE(54-75,43-43)
+REPLACE(81-83,49-52)
+REPLACE(94-95,63-64)
+
 37378879+h-huss@users.noreply.github.com
 Replaced sonarQubeSimulationServer with command-line switch (use --simulateSonarServer=true to use it)
 1521795986 | commit bfb6a17e112aa33e330e48fbb67dc1f479ca2ad0 1521795986 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-5)
+
 tamara.gunkel@viadee.de
 Fixes #15
 1521795002 | commit cbf7f998f5abf0d5750b611d62ec8a16779c6260 1521795002 ----sp
+Is NOT Merge
+nullREPLACE(23-25,23-25)
+
 tamara.gunkel@viadee.de
 Fixes #17
 1521732123 | commit baba4f1a08b859a4b41f3ad7c8de419b95849265 1521732123 ----sp
+Is NOT Merge
+nullINSERT(3-3,3-6)
+REPLACE(5-6,8-9)
+REPLACE(10-11,13-14)
+REPLACE(15-16,18-19)
+REPLACE(20-21,23-24)
+REPLACE(36-37,39-40)
+REPLACE(38-39,41-42)
+REPLACE(51-52,54-55)
+REPLACE(59-60,62-64)
+
 tamara.gunkel@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1521728215 | commit bc5b9e12c86f5a1fc307b981d39eb3f919f394a6 1521728215 ----sp
+Is Merge
+nullREPLACE(10-11,10-11)
+
 tamara.gunkel@viadee.de
 finished translations in templates
 1521727691 | commit ee622e657ff836430880c55a5ee358c23be5279c 1521727691 ----sp
+Is NOT Merge
+nullREPLACE(0-1,0-1)
+REPLACE(6-8,6-8)
+REPLACE(14-15,14-15)
+
 tamara.gunkel@viadee.de
 adjusted table layout
 1521721310 | commit e35d820662f860bb31cdb23ff536041b58b54983 1521721310 ----sp
+Is NOT Merge
+nullREPLACE(22-25,22-25)
+REPLACE(26-28,26-28)
+REPLACE(82-83,82-83)
+
 nico.buescher@viadee.de
 When the Quests page is opened, 3 requests are sent to the server, only 1 request should be sent to the server. #19
 1521647039 | commit dc5da671fdc009b50e57f69d0fa995cfb4fa7f83 1521647039 ----sp
+Is NOT Merge
+nullREPLACE(10-11,10-11)
+
 nico.buescher@viadee.de
 As an admin, i can create, update and delete developers, in order to manage my teams #8
 1521471800 | commit 920a3f5694295c1563d7a8d36bccf26cc89339f1 1521471800 ----sp
+Is NOT Merge
+nullDELETE(4-5,4-4)
+REPLACE(6-7,5-6)
+DELETE(23-25,22-22)
+INSERT(26-26,23-25)
+REPLACE(28-29,27-28)
+DELETE(30-31,29-29)
+INSERT(32-32,30-31)
+REPLACE(41-42,40-41)
+INSERT(67-67,66-67)
+REPLACE(70-78,70-71)
+INSERT(80-80,73-75)
+INSERT(97-97,92-93)
+REPLACE(99-103,95-97)
+DELETE(107-118,101-101)
+
 nico.buescher@viadee.de
 Merge branch 'master' of https://github.com/viadee/sonarQuest
 1521037948 | commit 2b6bc6f89054c7676c2d07502f74e17dec30e895 1521037948 ----sp
+Is Merge
+null
 nico.buescher@viadee.de
 You can edit Adventures in Gamemaster View
 1521037930 | commit 39e2f628ecc989825456f5cf14decc54b1b22121 1521037930 ----sp
+Is NOT Merge
+nullINSERT(51-51,51-52)
+
 nico.buescher@viadee.de
 You can edit Adventures in Gamemaster View
 1521034623 | commit 7bff10e763b7468b29e7d43aba85f29cc283956a 1521034623 ----sp
+Is NOT Merge
+nullINSERT(51-51,51-52)
+
 florian.schacht@viadee.de
 added refreshStandardTask feature to frontend
 1520933842 | commit e7340a5cb0ae0815efa3a0c76222a09554030ee7 1520933842 ----sp
+Is NOT Merge
+nullREPLACE(49-50,49-50)
+
 MeC@NBWXW484.intern.viadee.de
 Clean-Up
 1520839780 | commit e10bef8a2f8f0ca44126c61c0c206a7812b58ce2 1520839780 ----sp
+Is NOT Merge
+nullREPLACE(89-90,89-90)
+DELETE(98-103,98-98)
+REPLACE(106-107,101-102)
+DELETE(117-122,112-112)
+DELETE(130-135,120-120)
+DELETE(143-148,128-128)
+DELETE(153-158,133-133)
+DELETE(166-171,141-141)
+DELETE(178-183,148-148)
+DELETE(190-195,155-155)
+DELETE(200-205,160-160)
+REPLACE(209-216,164-165)
+DELETE(226-231,175-175)
+DELETE(242-247,186-186)
+DELETE(258-263,197-197)
+DELETE(268-273,202-202)
+DELETE(280-285,209-209)
+DELETE(299-304,223-223)
+REPLACE(305-306,224-226)
+DELETE(311-316,231-231)
+
 florian.schacht@viadee.de
 initial commit
 1520611885 | commit 19dea7139362da22506a87355661bdf876d8bca3 1520611885 ----sp
+Is NOT Merge
+nullREPLACE(0-2,0-2)
+REPLACE(3-5,3-10)
+REPLACE(6-8,11-16)
+REPLACE(9-11,17-24)
+DELETE(12-19,25-25)
+REPLACE(20-22,26-76)
+
 frank.koehne@viadee.de
 Licensing via BSD 3-clause license.
 1518778691 | commit d1c93b77955a06133dd33bc8fe644dc120de7000 1518778691 ----sp
+Is NOT Merge
+nullINSERT(0-0,0-29)
+
 frank.koehne@viadee.de
 Initial commit
 1503318220 | commit cea69673a861870a7b40d460f11ba5f66d3b9f90 1503318220 ----sp
+Is NOT Merge
