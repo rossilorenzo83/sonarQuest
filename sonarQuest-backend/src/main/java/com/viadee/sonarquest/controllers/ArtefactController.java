@@ -84,7 +84,7 @@ public class ArtefactController {
 	public boolean deleteArtefact(@PathVariable(value = "id") final Long id) {
 		Artefact artefact = artefactRepository.findOne(id);
 		if (artefact != null) {
-			if (artefact.getUsers().size() != 0) {
+			if (!artefact.getUsers().isEmpty()) {
 				return false;
 			} else {
 				artefactRepository.delete(id);
