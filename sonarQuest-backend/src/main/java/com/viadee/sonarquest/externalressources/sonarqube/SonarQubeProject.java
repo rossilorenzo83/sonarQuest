@@ -1,4 +1,4 @@
-package com.viadee.sonarquest.externalressources;
+package com.viadee.sonarquest.externalressources.sonarqube;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

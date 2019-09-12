@@ -1,4 +1,4 @@
-package com.viadee.sonarquest.externalressources;
+package com.viadee.sonarquest.externalressources.sonarqube;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,19 +6,19 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class SonarQubeProjectRessource {
+public class SonarQubeIssueRessource {
 
     private SonarQubePaging paging;
 
-    @JsonProperty("components")
-    private List<SonarQubeProject> sonarQubeProjects;
+    @JsonProperty("issues")
+    private List<SonarQubeIssue> issues;
 
-    public List<SonarQubeProject> getSonarQubeProjects() {
-        return sonarQubeProjects;
+    public List<SonarQubeIssue> getIssues() {
+        return issues;
     }
 
-    public void setSonarQubeProjects(List<SonarQubeProject> sonarQubeProjects) {
-        this.sonarQubeProjects = sonarQubeProjects;
+    public void setIssues(List<SonarQubeIssue> issues) {
+        this.issues = issues;
     }
 
     public SonarQubePaging getPaging() {
@@ -31,9 +31,9 @@ public class SonarQubeProjectRessource {
 
     @Override
     public String toString() {
-        return "SonarQubeProjectRessource{" +
+        return "SonarQubeIssueRessource{" +
                 "paging=" + paging +
-                ", projects=" + sonarQubeProjects +
+                ", issues=" + issues +
                 '}';
     }
 }

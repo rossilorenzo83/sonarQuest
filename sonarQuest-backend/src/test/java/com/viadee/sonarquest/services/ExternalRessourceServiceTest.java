@@ -8,7 +8,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
-import com.viadee.sonarquest.externalressources.SonarQubeSeverity;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeSeverity;
 
 public class ExternalRessourceServiceTest {
 

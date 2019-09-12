@@ -1,4 +1,4 @@
-package com.viadee.sonarquest.externalressources;
+package com.viadee.sonarquest.externalressources.sonarqube;
 
 public class SonarQubePaging {
 

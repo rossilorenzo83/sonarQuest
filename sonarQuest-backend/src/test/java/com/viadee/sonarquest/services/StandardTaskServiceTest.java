@@ -17,7 +17,7 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import com.viadee.sonarquest.entities.StandardTask;
 import com.viadee.sonarquest.entities.World;
-import com.viadee.sonarquest.externalressources.SonarQubeSeverity;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeSeverity;
 import com.viadee.sonarquest.repositories.StandardTaskRepository;
 import com.viadee.sonarquest.rules.SonarQuestStatus;
 

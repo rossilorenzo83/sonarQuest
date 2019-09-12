@@ -12,9 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
 import com.viadee.sonarquest.entities.SonarConfig;
-import com.viadee.sonarquest.externalressources.SonarQubeApiCall;
-import com.viadee.sonarquest.externalressources.SonarQubeComponentQualifier;
-import com.viadee.sonarquest.externalressources.SonarQubeProjectRessource;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeApiCall;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeComponentQualifier;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeProjectRessource;
 import com.viadee.sonarquest.services.RestTemplateService;
 import com.viadee.sonarquest.services.SonarConfigService;
 

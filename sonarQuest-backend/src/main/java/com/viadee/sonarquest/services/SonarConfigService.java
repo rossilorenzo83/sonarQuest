@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.viadee.sonarquest.entities.SonarConfig;
-import com.viadee.sonarquest.externalressources.SonarQubeApiResponse;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeApiResponse;
 import com.viadee.sonarquest.repositories.SonarConfigRepository;
 
 @Service
