@@ -2,27 +2,30 @@ package com.viadee.sonarquest.externalressources;
 
 import org.springframework.web.client.RestOperations;
 
+import com.viadee.sonarquest.configurations.ConnectorsConfig;
+
 public class Manager {
 
 	private final RestOperations restTemplate;
-	private final Config config;
 	private final String projectKey;
+	private final ConnectorsConfig connectorsConfig;
 
-	protected Manager(String projectKey, RestOperations restTemplate, Config config) {
+
+	protected Manager(String projectKey, RestOperations restTemplate, ConnectorsConfig connectorsConfig) {
 		this.projectKey = projectKey;
 		this.restTemplate = restTemplate;
-		this.config = config;
+		this.connectorsConfig = connectorsConfig;
 	}
 
 	public RestOperations getRestTemplate() {
 		return restTemplate;
 	}
 
-	public Config getConfig() {
-		return config;
-	}
-
 	public String getProjectKey() {
 		return projectKey;
+	}
+
+	public ConnectorsConfig getConnectorsConfig() {
+		return connectorsConfig;
 	}
 }

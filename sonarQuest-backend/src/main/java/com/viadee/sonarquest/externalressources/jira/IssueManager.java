@@ -9,18 +9,20 @@ import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestOperations;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.viadee.sonarquest.externalressources.Config;
+import com.viadee.sonarquest.configurations.ConnectorsConfig;
 import com.viadee.sonarquest.externalressources.BasicAuthUtils;
 import com.viadee.sonarquest.externalressources.Manager;
 
 public class IssueManager extends Manager {
 
-	public IssueManager(String projectKey, RestOperations restTemplate, Config config) {
-		super(projectKey, restTemplate, config);
+
+
+	public IssueManager(String projectKey, RestOperations restTemplate, ConnectorsConfig connectorsConfig) {
+		super(projectKey, restTemplate, connectorsConfig);
 	}
 
 	public JiraIssue findOldestIssue(JiraFilter filter) {
-		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUsername(), getConfig().getJiraPwd());
+		HttpHeaders headers = BasicAuthUtils.headers(this.getConnectorsConfig().getJiraUsername(), this.getConnectorsConfig().getJiraPassword());
 		HttpEntity request = new HttpEntity(headers);
 		URI uri = buildSearchUri(filter.getSearchUrl(), true);
 		SearchIssuesResult result =
@@ -33,15 +35,15 @@ public class IssueManager extends Manager {
 	}
 
 	public JiraFilter getOldestBugFilter() {
-		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUsername(), getConfig().getJiraPwd());
+		HttpHeaders headers = BasicAuthUtils.headers(this.getConnectorsConfig().getJiraUsername(), this.getConnectorsConfig().getJiraPassword());
 		HttpEntity request = new HttpEntity(headers);
 		return (JiraFilter) getRestTemplate().exchange(buildOldestBugFilterUri().toString(), HttpMethod.GET, request, JiraFilter.class)
 				.getBody();
 	}
 
 	URI buildOldestBugFilterUri() {
-		return UriComponentsBuilder.newInstance().scheme("https").host(getConfig().getJiraHost()).path("/rest/api/2/filter")
-				.path("/" + getConfig().getJiraFilter()).build().toUri();
+		return UriComponentsBuilder.newInstance().scheme("https").host(this.getConnectorsConfig().getJiraHost()).path("/rest/api/2/filter").path("/" + this.getConnectorsConfig().getJiraFilterId()).build()
+				.toUri();
 	}
 
 	/**
