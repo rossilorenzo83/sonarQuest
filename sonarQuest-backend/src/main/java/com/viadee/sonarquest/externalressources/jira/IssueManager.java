@@ -20,7 +20,7 @@ public class IssueManager extends Manager {
 	}
 
 	public JiraIssue findOldestIssue(JiraFilter filter) {
-		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUser(), getConfig().getJiraPassword());
+		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUsername(), getConfig().getJiraPwd());
 		HttpEntity request = new HttpEntity(headers);
 		URI uri = buildSearchUri(filter.getSearchUrl(), true);
 		SearchIssuesResult result =
@@ -33,7 +33,7 @@ public class IssueManager extends Manager {
 	}
 
 	public JiraFilter getOldestBugFilter() {
-		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUser(), getConfig().getJiraPassword());
+		HttpHeaders headers = BasicAuthUtils.headers(getConfig().getJiraUsername(), getConfig().getJiraPwd());
 		HttpEntity request = new HttpEntity(headers);
 		return (JiraFilter) getRestTemplate().exchange(buildOldestBugFilterUri().toString(), HttpMethod.GET, request, JiraFilter.class)
 				.getBody();
@@ -41,7 +41,7 @@ public class IssueManager extends Manager {
 
 	URI buildOldestBugFilterUri() {
 		return UriComponentsBuilder.newInstance().scheme("https").host(getConfig().getJiraHost()).path("/rest/api/2/filter")
-				.path("/" + getConfig().getJiraFilter(getProjectKey())).build().toUri();
+				.path("/" + getConfig().getJiraFilter()).build().toUri();
 	}
 
 	/**

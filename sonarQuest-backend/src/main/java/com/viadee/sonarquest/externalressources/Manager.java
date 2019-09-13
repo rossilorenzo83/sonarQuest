@@ -2,8 +2,6 @@ package com.viadee.sonarquest.externalressources;
 
 import org.springframework.web.client.RestOperations;
 
-import com.swissquote.projects.Config;
-
 public class Manager {
 
 	private final RestOperations restTemplate;

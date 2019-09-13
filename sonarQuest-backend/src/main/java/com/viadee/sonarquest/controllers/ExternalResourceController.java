@@ -8,24 +8,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeProject;
-import com.viadee.sonarquest.services.ExternalRessourceService;
+import com.viadee.sonarquest.services.ExternalResourceService;
 
 @RestController
 @RequestMapping("/externalRessource")
-public class ExternalRessourceController {
+public class ExternalResourceController {
 
-    @Autowired
-    private ExternalRessourceService externalRessourceService;
+	@Autowired
+	private ExternalResourceService externalResourceService;
 
-    @GetMapping(value = "/project")
-    public List<SonarQubeProject> getAllSonarQubeProjects() {
-        return this.externalRessourceService.getSonarQubeProjects();
-    }
-
-
-
-
-
-
+	@GetMapping(value = "/project")
+	public List<SonarQubeProject> getAllSonarQubeProjects() {
+		return this.externalResourceService.getSonarQubeProjects();
+	}
 
 }

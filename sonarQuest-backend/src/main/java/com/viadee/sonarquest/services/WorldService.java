@@ -12,7 +12,7 @@ import com.viadee.sonarquest.repositories.WorldRepository;
 public class WorldService {
 
     @Autowired
-    private ExternalRessourceService externalRessourceService;
+    private ExternalResourceService externalResourceService;
 
     @Autowired
     private WorldRepository worldRepository;
@@ -29,7 +29,7 @@ public class WorldService {
     }
 
     public void updateWorlds() {
-        final List<World> externalWorlds = externalRessourceService.generateWorldsFromSonarQubeProjects();
+        final List<World> externalWorlds = externalResourceService.generateWorldsFromSonarQubeProjects();
         externalWorlds.forEach(this::saveWorldIfNotExists);
     }
 
@@ -40,8 +40,8 @@ public class WorldService {
         }
     }
 
-    public void setExternalRessourceService(final ExternalRessourceService externalRessourceService) {
-        this.externalRessourceService = externalRessourceService;
+    public void setExternalRessourceService(final ExternalResourceService externalRessourceService) {
+        this.externalResourceService = externalRessourceService;
     }
 
     public List<World> findAllActiveWorlds() {

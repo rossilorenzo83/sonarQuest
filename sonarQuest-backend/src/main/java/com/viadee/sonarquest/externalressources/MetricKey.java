@@ -1,0 +1,12 @@
+package com.viadee.sonarquest.externalressources;
+
+public enum MetricKey {
+	OPEN_BRANCHES,
+	OLDEST_BRANCH,
+	DOWNTIME_PERCENTAGE,
+	FAILED_BUILD_PERCENTAGE,
+	MEAN_TIME_TO_RESOLVE,
+	LATEST_RELEASE,
+	OLDEST_BUG,
+	STATIC_CODE_ANALYSIS
+}

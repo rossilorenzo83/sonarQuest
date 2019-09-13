@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import com.viadee.sonarquest.entities.SonarConfig;
 import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeApiCall;
 import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeComponentQualifier;
-import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeProjectRessource;
+import com.viadee.sonarquest.externalressources.sonarqube.SonarQubeProjectResource;
 import com.viadee.sonarquest.services.RestTemplateService;
 import com.viadee.sonarquest.services.SonarConfigService;
 
@@ -23,28 +23,23 @@ import com.viadee.sonarquest.services.SonarConfigService;
 @Ignore
 public class SonarQubeApiCallIT {
 
-    @Autowired
-    private RestTemplateService restTemplateService;
+	@Autowired
+	private RestTemplateService restTemplateService;
 
-    @Autowired
-    private SonarConfigService sonarConfigService;
+	@Autowired
+	private SonarConfigService sonarConfigService;
 
-    @Test
-    public void searchComponents() throws Exception {
-        SonarConfig sonarConfig = sonarConfigService.getConfig();
-        String sonarQubeServerUrl = sonarConfig.getSonarServerUrl();
-        String projectKey = "assertj";
-        SonarQubeApiCall apiCall = SonarQubeApiCall
-                .onServer(sonarQubeServerUrl)
-                .searchComponents(SonarQubeComponentQualifier.TRK)
-                .withQuery(projectKey)
-                .build();
-        RestTemplate restTemplate = restTemplateService.getRestTemplate(sonarConfig);
+	@Test
+	public void searchComponents() throws Exception {
+		SonarConfig sonarConfig = sonarConfigService.getConfig();
+		String sonarQubeServerUrl = sonarConfig.getSonarServerUrl();
+		String projectKey = "assertj";
+		SonarQubeApiCall apiCall =
+				SonarQubeApiCall.onServer(sonarQubeServerUrl).searchComponents(SonarQubeComponentQualifier.TRK).withQuery(projectKey).build();
+		RestTemplate restTemplate = restTemplateService.getRestTemplate(sonarConfig);
 
-        final ResponseEntity<SonarQubeProjectRessource> response = restTemplate.getForEntity(
-                apiCall.asString(),
-                SonarQubeProjectRessource.class);
-        assertEquals(1, response.getBody().getSonarQubeProjects().size());
-    }
+		final ResponseEntity<SonarQubeProjectResource> response = restTemplate.getForEntity(apiCall.asString(), SonarQubeProjectResource.class);
+		assertEquals(1, response.getBody().getSonarQubeProjects().size());
+	}
 
 }
